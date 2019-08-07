@@ -27,7 +27,7 @@
 			},
 			"response": [
 				{
-					"id": "2b6950fe-c318-42eb-9f0f-bc40e76df1de",
+					"id": "03c30036-6d2f-418d-b3a9-0d0bacf455e8",
 					"name": "1st Requirement - Sending OTP",
 					"originalRequest": {
 						"url": "http://localhost/greentrends/otp-send.php",
@@ -84,7 +84,7 @@
 					"body": "{\n    \"data\": {\n        \"message\": \"OTP sent successfully\"\n    }\n}"
 				},
 				{
-					"id": "9d3a4ad1-f7b6-47ec-b17c-77cdf526c506",
+					"id": "e2111c45-29e8-4ec2-ac8a-30f72c394363",
 					"name": "1st Requirement - Sending OTP",
 					"originalRequest": {
 						"url": "http://localhost/greentrends/otp-send.php",
@@ -162,7 +162,7 @@
 			},
 			"response": [
 				{
-					"id": "96e07e76-ff77-4e4f-88f8-3d54f5e88a83",
+					"id": "4b2e49e7-b0fc-422a-94a4-74dfad96371b",
 					"name": "2nd Requirement - OTP verify",
 					"originalRequest": {
 						"url": "http://localhost/greentrends/otp-verify.php",
@@ -233,7 +233,7 @@
 					},
 					{
 						"key": "x-auth-token",
-						"value": "38209c8b5df1bad9bd2821380d1f7c0e",
+						"value": "3e3e336bb51650b126ff869ce76ebff6",
 						"description": ""
 					}
 				],
@@ -245,7 +245,7 @@
 			},
 			"response": [
 				{
-					"id": "1804c586-2455-4916-9e94-660782cef409",
+					"id": "3ccc1629-d668-48c1-92f2-d4a8f577aba5",
 					"name": "3rd Requirement - Update Profile",
 					"originalRequest": {
 						"url": "http://localhost/greentrends/update-profile.php",
@@ -337,7 +337,7 @@
 				"header": [
 					{
 						"key": "x-auth-token",
-						"value": "38209c8b5df1bad9bd2821380d1f7c0e",
+						"value": "3e3e336bb51650b126ff869ce76ebff6",
 						"description": ""
 					}
 				],
@@ -371,13 +371,13 @@
 				"header": [
 					{
 						"key": "x-auth-token",
-						"value": "38209c8b5df1bad9bd2821380d1f7c0e",
+						"value": "3e3e336bb51650b126ff869ce76ebff6",
 						"description": ""
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"service_id\":16\r\n}"
+					"raw": "{\r\n    \"service_id\":12\r\n}"
 				},
 				"description": ""
 			},
@@ -407,7 +407,7 @@
 			"name": "8th requirement - view bookings",
 			"request": {
 				"url": {
-					"raw": "http://innowity.com/greentrends/api/view-bookings.php?status=1",
+					"raw": "http://innowity.com/greentrends/api/view-bookings.php?status=7",
 					"protocol": "http",
 					"host": [
 						"innowity",
@@ -421,7 +421,7 @@
 					"query": [
 						{
 							"key": "status",
-							"value": "1",
+							"value": "7",
 							"equals": true,
 							"description": ""
 						}
@@ -432,7 +432,7 @@
 				"header": [
 					{
 						"key": "x-auth-token",
-						"value": "c33eaa4b85fb5f0e6b77907f1f34b940",
+						"value": "3e3e336bb51650b126ff869ce76ebff6",
 						"description": ""
 					},
 					{
@@ -458,7 +458,7 @@
 				"header": [
 					{
 						"key": "x-auth-token",
-						"value": "38209c8b5df1bad9bd2821380d1f7c0e",
+						"value": "3e3e336bb51650b126ff869ce76ebff6",
 						"description": ""
 					},
 					{
@@ -484,7 +484,7 @@
 				"header": [
 					{
 						"key": "x-auth-token",
-						"value": "38209c8b5df1bad9bd2821380d1f7c0e",
+						"value": "3e3e336bb51650b126ff869ce76ebff6",
 						"description": ""
 					},
 					{
@@ -496,7 +496,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"date\": \"02-Aug-2019\",\r\n  \"time\" : \"18:12:33\",\r\n  \"notes\": \"six thirty time notes\"\r\n}"
+					"raw": "{\r\n   \"date\": \"02-Aug-2019\",\r\n  \"time\" : \"18:12:33\",\r\n  \"notes\": \"six thirty time notes\"\r\n}"
 				},
 				"description": ""
 			},
@@ -506,11 +506,11 @@
 			"name": "11th requirement - reschedule appointment",
 			"request": {
 				"url": "http://innowity.com/greentrends/api/reschedule.php",
-				"method": "POST",
+				"method": "PATCH",
 				"header": [
 					{
 						"key": "x-auth-token",
-						"value": "26ebad8115e5f4fa1453e703641fa9fd",
+						"value": "3e3e336bb51650b126ff869ce76ebff6",
 						"description": ""
 					},
 					{
@@ -522,7 +522,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"booking_id\" : 123,\r\n  \"date\": \"31-Jul-2019\",\r\n  \"time\" : \"07:12:34\",\r\n  \"notes\": \"neeeeeeeeeeeeeeeeeeeeeeeeew\"\r\n}"
+					"raw": "{\r\n  \"booking_id\" : 1291,\r\n  \"date\": \"31-Jul-2019\",\r\n  \"time\" : \"07:12:34\",\r\n  \"notes\": \"new one\"\r\n}"
 				},
 				"description": ""
 			},
@@ -532,11 +532,11 @@
 			"name": "12th requirement - Cancel appointment",
 			"request": {
 				"url": "http://innowity.com/greentrends/api/cancel.php",
-				"method": "DELETE",
+				"method": "PATCH",
 				"header": [
 					{
 						"key": "x-auth-token",
-						"value": "26ebad8115e5f4fa1453e703641fa9fd",
+						"value": "3e3e336bb51650b126ff869ce76ebff6",
 						"description": ""
 					},
 					{
@@ -548,7 +548,54 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"booking_id\" : 123,\r\n  \"notes\": \"cancelled because of time schedule\"\r\n}"
+					"raw": "{\r\n\r\n  \"notes\": \"cancelled because of time schedule\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "13th requirement - Booking ID details",
+			"request": {
+				"url": {
+					"raw": "http://innowity.com/greentrends/api/booking-id-details.php?booking_id=128",
+					"protocol": "http",
+					"host": [
+						"innowity",
+						"com"
+					],
+					"path": [
+						"greentrends",
+						"api",
+						"booking-id-details.php"
+					],
+					"query": [
+						{
+							"key": "booking_id",
+							"value": "128",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "3e3e336bb51650b126ff869ce76ebff6",
+						"description": ""
+					},
+					{
+						"key": "",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n  \"notes\": \"cancelled because of time schedule\"\r\n}"
 				},
 				"description": ""
 			},
