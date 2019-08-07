@@ -1,0 +1,558 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Innowity",
+		"_postman_id": "2da13856-bac2-2b38-1ec6-44dc9577d9b8",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1st Requirement - Sending OTP",
+			"request": {
+				"url": "http://innowity.com/greentrends/api/otp-send.php",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cell\": \"9500950095\"\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "2b6950fe-c318-42eb-9f0f-bc40e76df1de",
+					"name": "1st Requirement - Sending OTP",
+					"originalRequest": {
+						"url": "http://localhost/greentrends/otp-send.php",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"phone\": \"9600297967\"\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 22 Jul 2019 18:06:49 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.1.9"
+						},
+						{
+							"key": "Content-Length",
+							"value": "44"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"message\": \"OTP sent successfully\"\n    }\n}"
+				},
+				{
+					"id": "9d3a4ad1-f7b6-47ec-b17c-77cdf526c506",
+					"name": "1st Requirement - Sending OTP",
+					"originalRequest": {
+						"url": "http://localhost/greentrends/otp-send.php",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"phone\": \"9600297967\"\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 22 Jul 2019 18:10:36 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.1.9"
+						},
+						{
+							"key": "Content-Length",
+							"value": "44"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"message\": \"OTP sent successfully\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "2nd Requirement - OTP verify",
+			"request": {
+				"url": "http://innowity.com/greentrends/api/otp-verify.php",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"otp\": \"1234\",\n    \"cell\": \"9500950095\",\n\t\"salon_id\":\"1\",\n    \"fcmID\": \"4asdgas45a6sd\"\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "96e07e76-ff77-4e4f-88f8-3d54f5e88a83",
+					"name": "2nd Requirement - OTP verify",
+					"originalRequest": {
+						"url": "http://localhost/greentrends/otp-verify.php",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"otp\": \"2747\",\n    \"phone\": \"9600297967\",\n\t\"branch_id\":\"123abc456def\",\n    \"fcmID\": \"4asdgas45a6sd\"\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 22 Jul 2019 18:07:07 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.1.9"
+						},
+						{
+							"key": "Content-Length",
+							"value": "313"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"isNewUser\": false,\n        \"x-auth-token\": \"311dec5d5d386fa1a2558cc28cc660d6\",\n        \"userDetails\": {\n            \"fname\": \"bala\",\n            \"lname\": \"murugan\",\n            \"cell\": \"9600297967\",\n            \"branch_id\": \"123abc456def\",\n            \"age_group\": \"21-30\",\n            \"gender\": \"Male\",\n            \"email\": \"SVBALA99@GMAIL.COM\",\n            \"dp_url\": \"something.com\",\n            \"referral_code\": \"1234code\",\n            \"beauty_points\": \"100\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "3rd Requirement - Update Profile",
+			"request": {
+				"url": "http://innowity.com/greentrends/api/update-profile.php",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-auth-token",
+						"value": "38209c8b5df1bad9bd2821380d1f7c0e",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userDetails\": {\n        \"fname\": \"naveen\",\n        \"lname\": \"kumar\",\n        \"cell\": \"9300930093\",\n        \"age_group\": \"21-30\",\n        \"gender\": \"male\",\n        \"email\": \"sasi@GMAIL.COM\",\n        \"dp_url\": \"image website link\"\n    }\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "1804c586-2455-4916-9e94-660782cef409",
+					"name": "3rd Requirement - Update Profile",
+					"originalRequest": {
+						"url": "http://localhost/greentrends/update-profile.php",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-auth-token",
+								"value": "b1a44d8a4e13076c4dc27a353809547d",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userDetails\": {\n        \"fname\": \"bala\",\n        \"lname\": \"murugan\",\n        \"cell\": \"9600297967\",\n        \"branch_id\": \"123abc456def\",\n        \"age_group\": \"21-30\",\n        \"gender\": \"Male\",\n        \"email\": \"SVBALA99@GMAIL.COM\",\n        \"dp_url\": \"image website link\",\n        \"referral_code\": \"1234code\",\n        \"beauty_points\": \"190\"\n    }\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 22 Jul 2019 18:18:54 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.1.9"
+						},
+						{
+							"key": "Content-Length",
+							"value": "288"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"message\": \"Profile Updated successfully\",\n        \"userDetails\": {\n            \"fname\": \"bala\",\n            \"lname\": \"murugan\",\n            \"cell\": \"9600297967\",\n            \"branch_id\": \"123abc456def\",\n            \"age_group\": \"21-30\",\n            \"gender\": \"m\",\n            \"email\": \"SVBALA99@GMAIL.COM\",\n            \"dp_url\": \"image website link\",\n            \"referral_code\": \"1234code\",\n            \"beauty_points\": \"190\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "4th requirement - services",
+			"request": {
+				"url": {
+					"raw": "http://innowity.com/greentrends/api/services.php?gender=male",
+					"protocol": "http",
+					"host": [
+						"innowity",
+						"com"
+					],
+					"path": [
+						"greentrends",
+						"api",
+						"services.php"
+					],
+					"query": [
+						{
+							"key": "gender",
+							"value": "male",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "38209c8b5df1bad9bd2821380d1f7c0e",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "5th requirement - referrals",
+			"request": {
+				"url": "http://innowity.com/greentrends/api/referrals.php",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "asdasdasdasdasdasd",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "6th requirement - add to cart",
+			"request": {
+				"url": "http://innowity.com/greentrends/api/add-cart-item.php",
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "38209c8b5df1bad9bd2821380d1f7c0e",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"service_id\":16\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "7th requirement - Delete from Cart",
+			"request": {
+				"url": "http://innowity.com/greentrends/api/delete-cart-item.php",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "38209c8b5df1bad9bd2821380d1f7c0e",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"service_id\":16\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "8th requirement - view bookings",
+			"request": {
+				"url": {
+					"raw": "http://innowity.com/greentrends/api/view-bookings.php?status=1",
+					"protocol": "http",
+					"host": [
+						"innowity",
+						"com"
+					],
+					"path": [
+						"greentrends",
+						"api",
+						"view-bookings.php"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "c33eaa4b85fb5f0e6b77907f1f34b940",
+						"description": ""
+					},
+					{
+						"key": "",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"service_id\":2\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "9th requirement - View cart",
+			"request": {
+				"url": "http://innowity.com/greentrends/api/view-cart.php",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "38209c8b5df1bad9bd2821380d1f7c0e",
+						"description": ""
+					},
+					{
+						"key": "",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"service_id\":2\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "10th requirement - book appointment",
+			"request": {
+				"url": "http://innowity.com/greentrends/api/book.php",
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "38209c8b5df1bad9bd2821380d1f7c0e",
+						"description": ""
+					},
+					{
+						"key": "",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"date\": \"02-Aug-2019\",\r\n  \"time\" : \"18:12:33\",\r\n  \"notes\": \"six thirty time notes\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "11th requirement - reschedule appointment",
+			"request": {
+				"url": "http://innowity.com/greentrends/api/reschedule.php",
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "26ebad8115e5f4fa1453e703641fa9fd",
+						"description": ""
+					},
+					{
+						"key": "",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"booking_id\" : 123,\r\n  \"date\": \"31-Jul-2019\",\r\n  \"time\" : \"07:12:34\",\r\n  \"notes\": \"neeeeeeeeeeeeeeeeeeeeeeeeew\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "12th requirement - Cancel appointment",
+			"request": {
+				"url": "http://innowity.com/greentrends/api/cancel.php",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "26ebad8115e5f4fa1453e703641fa9fd",
+						"description": ""
+					},
+					{
+						"key": "",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"booking_id\" : 123,\r\n  \"notes\": \"cancelled because of time schedule\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
