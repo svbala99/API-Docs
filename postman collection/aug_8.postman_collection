@@ -27,7 +27,7 @@
 			},
 			"response": [
 				{
-					"id": "03c30036-6d2f-418d-b3a9-0d0bacf455e8",
+					"id": "cabf17ec-0bd1-4bd8-8110-0a9395e2d9ab",
 					"name": "1st Requirement - Sending OTP",
 					"originalRequest": {
 						"url": "http://localhost/greentrends/otp-send.php",
@@ -84,7 +84,7 @@
 					"body": "{\n    \"data\": {\n        \"message\": \"OTP sent successfully\"\n    }\n}"
 				},
 				{
-					"id": "e2111c45-29e8-4ec2-ac8a-30f72c394363",
+					"id": "49e23bcd-c4ba-417a-804a-61fa60c03313",
 					"name": "1st Requirement - Sending OTP",
 					"originalRequest": {
 						"url": "http://localhost/greentrends/otp-send.php",
@@ -162,7 +162,7 @@
 			},
 			"response": [
 				{
-					"id": "4b2e49e7-b0fc-422a-94a4-74dfad96371b",
+					"id": "12988497-0260-4a4e-8bb7-2c9087ec8a5e",
 					"name": "2nd Requirement - OTP verify",
 					"originalRequest": {
 						"url": "http://localhost/greentrends/otp-verify.php",
@@ -233,7 +233,7 @@
 					},
 					{
 						"key": "x-auth-token",
-						"value": "3e3e336bb51650b126ff869ce76ebff6",
+						"value": "10c38db2873382e593b4c346cca24b4f",
 						"description": ""
 					}
 				],
@@ -245,7 +245,7 @@
 			},
 			"response": [
 				{
-					"id": "3ccc1629-d668-48c1-92f2-d4a8f577aba5",
+					"id": "8534a344-9895-4404-937f-101c396444a1",
 					"name": "3rd Requirement - Update Profile",
 					"originalRequest": {
 						"url": "http://localhost/greentrends/update-profile.php",
@@ -312,7 +312,7 @@
 			"name": "4th requirement - services",
 			"request": {
 				"url": {
-					"raw": "http://innowity.com/greentrends/api/services.php?gender=male",
+					"raw": "http://innowity.com/greentrends/api/services.php?gender=Male&combo=yeS",
 					"protocol": "http",
 					"host": [
 						"innowity",
@@ -326,7 +326,13 @@
 					"query": [
 						{
 							"key": "gender",
-							"value": "male",
+							"value": "Male",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "combo",
+							"value": "yeS",
 							"equals": true,
 							"description": ""
 						}
@@ -337,7 +343,7 @@
 				"header": [
 					{
 						"key": "x-auth-token",
-						"value": "3e3e336bb51650b126ff869ce76ebff6",
+						"value": "10c38db2873382e593b4c346cca24b4f",
 						"description": ""
 					}
 				],
@@ -377,7 +383,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"service_id\":12\r\n}"
+					"raw": "{\r\n    \"service_id\":13\r\n}"
 				},
 				"description": ""
 			},
@@ -391,13 +397,13 @@
 				"header": [
 					{
 						"key": "x-auth-token",
-						"value": "38209c8b5df1bad9bd2821380d1f7c0e",
+						"value": "3e3e336bb51650b126ff869ce76ebff6",
 						"description": ""
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"service_id\":16\r\n}"
+					"raw": "{\r\n    \"service_id\":12\r\n}"
 				},
 				"description": ""
 			},
@@ -407,7 +413,7 @@
 			"name": "8th requirement - view bookings",
 			"request": {
 				"url": {
-					"raw": "http://innowity.com/greentrends/api/view-bookings.php?status=7",
+					"raw": "http://innowity.com/greentrends/api/view-bookings.php?status=1",
 					"protocol": "http",
 					"host": [
 						"innowity",
@@ -421,7 +427,7 @@
 					"query": [
 						{
 							"key": "status",
-							"value": "7",
+							"value": "1",
 							"equals": true,
 							"description": ""
 						}
@@ -522,7 +528,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"booking_id\" : 1291,\r\n  \"date\": \"31-Jul-2019\",\r\n  \"time\" : \"07:12:34\",\r\n  \"notes\": \"new one\"\r\n}"
+					"raw": "{\r\n  \"booking_id\" : 136,\r\n  \"date\": \"31-Jul-2019\",\r\n  \"time\" : \"07:12:34\",\r\n  \"notes\": \"new one\"\r\n}"
 				},
 				"description": ""
 			},
@@ -548,7 +554,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\r\n  \"notes\": \"cancelled because of time schedule\"\r\n}"
+					"raw": "{\r\n\t\"booking_id\":136,\r\n  \"notes\": \"cancelled because of time schedule\"\r\n}"
 				},
 				"description": ""
 			},
@@ -558,7 +564,7 @@
 			"name": "13th requirement - Booking ID details",
 			"request": {
 				"url": {
-					"raw": "http://innowity.com/greentrends/api/booking-id-details.php?booking_id=128",
+					"raw": "http://innowity.com/greentrends/api/booking-id-details.php?booking_id=136",
 					"protocol": "http",
 					"host": [
 						"innowity",
@@ -572,7 +578,7 @@
 					"query": [
 						{
 							"key": "booking_id",
-							"value": "128",
+							"value": "136",
 							"equals": true,
 							"description": ""
 						}
