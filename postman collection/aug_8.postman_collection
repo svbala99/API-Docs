@@ -27,7 +27,7 @@
 			},
 			"response": [
 				{
-					"id": "cabf17ec-0bd1-4bd8-8110-0a9395e2d9ab",
+					"id": "12d63133-4322-463a-938d-005d21d04ff8",
 					"name": "1st Requirement - Sending OTP",
 					"originalRequest": {
 						"url": "http://localhost/greentrends/otp-send.php",
@@ -84,7 +84,7 @@
 					"body": "{\n    \"data\": {\n        \"message\": \"OTP sent successfully\"\n    }\n}"
 				},
 				{
-					"id": "49e23bcd-c4ba-417a-804a-61fa60c03313",
+					"id": "1957b045-7e57-4155-8136-c7cb0b710364",
 					"name": "1st Requirement - Sending OTP",
 					"originalRequest": {
 						"url": "http://localhost/greentrends/otp-send.php",
@@ -162,7 +162,7 @@
 			},
 			"response": [
 				{
-					"id": "12988497-0260-4a4e-8bb7-2c9087ec8a5e",
+					"id": "35de0611-5eae-467d-875e-839d932865e3",
 					"name": "2nd Requirement - OTP verify",
 					"originalRequest": {
 						"url": "http://localhost/greentrends/otp-verify.php",
@@ -233,19 +233,19 @@
 					},
 					{
 						"key": "x-auth-token",
-						"value": "10c38db2873382e593b4c346cca24b4f",
+						"value": "f95710d588d5f6703abd9e86f3c54427",
 						"description": ""
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"userDetails\": {\n        \"fname\": \"naveen\",\n        \"lname\": \"kumar\",\n        \"cell\": \"9300930093\",\n        \"age_group\": \"21-30\",\n        \"gender\": \"male\",\n        \"email\": \"sasi@GMAIL.COM\",\n        \"dp_url\": \"image website link\"\n    }\n}"
+					"raw": "{\n    \"userDetails\": {\n        \"fname\": \"naveen\",\n        \"lname\": \"kumar\",\n        \"cell\": \"9500950095\",\n        \"age_group\": \"21-30\",\n        \"gender\": \"male\",\n        \"email\": \"sasi@GMAIL.COM\",\n        \"dp_url\": \"image website link\"\n    }\n}"
 				},
 				"description": ""
 			},
 			"response": [
 				{
-					"id": "8534a344-9895-4404-937f-101c396444a1",
+					"id": "93a9f710-823e-44ab-99a6-7e80eaf382ea",
 					"name": "3rd Requirement - Update Profile",
 					"originalRequest": {
 						"url": "http://localhost/greentrends/update-profile.php",
@@ -312,7 +312,7 @@
 			"name": "4th requirement - services",
 			"request": {
 				"url": {
-					"raw": "http://innowity.com/greentrends/api/services.php?gender=Male&combo=yeS",
+					"raw": "http://innowity.com/greentrends/api/services.php?gender=male&combo=yes",
 					"protocol": "http",
 					"host": [
 						"innowity",
@@ -326,13 +326,13 @@
 					"query": [
 						{
 							"key": "gender",
-							"value": "Male",
+							"value": "male",
 							"equals": true,
 							"description": ""
 						},
 						{
 							"key": "combo",
-							"value": "yeS",
+							"value": "yes",
 							"equals": true,
 							"description": ""
 						}
@@ -528,7 +528,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"booking_id\" : 136,\r\n  \"date\": \"31-Jul-2019\",\r\n  \"time\" : \"07:12:34\",\r\n  \"notes\": \"new one\"\r\n}"
+					"raw": "{\r\n  \"booking_id\" : 137,\r\n  \"date\": \"31-Jul-2019\",\r\n  \"time\" : \"07:12:34\",\r\n  \"notes\": \"new one\"\r\n}"
 				},
 				"description": ""
 			},
@@ -554,37 +554,16 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\t\"booking_id\":136,\r\n  \"notes\": \"cancelled because of time schedule\"\r\n}"
+					"raw": "{\r\n\t\"booking_id\":137,\r\n  \"notes\": \"cancelled because of time schedule\"\r\n}"
 				},
 				"description": ""
 			},
 			"response": []
 		},
 		{
-			"name": "13th requirement - Booking ID details",
+			"name": "14th requirement - Combo names",
 			"request": {
-				"url": {
-					"raw": "http://innowity.com/greentrends/api/booking-id-details.php?booking_id=136",
-					"protocol": "http",
-					"host": [
-						"innowity",
-						"com"
-					],
-					"path": [
-						"greentrends",
-						"api",
-						"booking-id-details.php"
-					],
-					"query": [
-						{
-							"key": "booking_id",
-							"value": "136",
-							"equals": true,
-							"description": ""
-						}
-					],
-					"variable": []
-				},
+				"url": "http://innowity.com/greentrends/api/combo-names.php",
 				"method": "GET",
 				"header": [
 					{
