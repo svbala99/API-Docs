@@ -21,13 +21,13 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"cell\": \"9500950095\"\n}"
+					"raw": "{\n    \"cell\": \"9400940094\"\n}"
 				},
 				"description": ""
 			},
 			"response": [
 				{
-					"id": "12d63133-4322-463a-938d-005d21d04ff8",
+					"id": "28f46ecd-157b-406f-bb15-1c03023ec8b4",
 					"name": "1st Requirement - Sending OTP",
 					"originalRequest": {
 						"url": "http://localhost/greentrends/otp-send.php",
@@ -84,7 +84,7 @@
 					"body": "{\n    \"data\": {\n        \"message\": \"OTP sent successfully\"\n    }\n}"
 				},
 				{
-					"id": "1957b045-7e57-4155-8136-c7cb0b710364",
+					"id": "a99f039f-c795-4dc4-a1f9-ef263300c102",
 					"name": "1st Requirement - Sending OTP",
 					"originalRequest": {
 						"url": "http://localhost/greentrends/otp-send.php",
@@ -156,13 +156,13 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"otp\": \"1234\",\n    \"cell\": \"9500950095\",\n\t\"salon_id\":\"1\",\n    \"fcmID\": \"4asdgas45a6sd\"\n}"
+					"raw": "{\n    \"otp\": \"1234\",\n    \"cell\": \"9400940094\",\n\t\"salon_id\":\"1\",\n    \"fcmID\": \"4asdgas45a6sd\"\n}"
 				},
 				"description": ""
 			},
 			"response": [
 				{
-					"id": "35de0611-5eae-467d-875e-839d932865e3",
+					"id": "1ba403c6-9035-4078-8fdb-638e3568fdf9",
 					"name": "2nd Requirement - OTP verify",
 					"originalRequest": {
 						"url": "http://localhost/greentrends/otp-verify.php",
@@ -245,7 +245,7 @@
 			},
 			"response": [
 				{
-					"id": "93a9f710-823e-44ab-99a6-7e80eaf382ea",
+					"id": "e4e8dabd-6d53-4456-9c73-7812427f4d61",
 					"name": "3rd Requirement - Update Profile",
 					"originalRequest": {
 						"url": "http://localhost/greentrends/update-profile.php",
@@ -561,6 +561,53 @@
 			"response": []
 		},
 		{
+			"name": "13th requirement - Booking ID details",
+			"request": {
+				"url": {
+					"raw": "http://innowity.com/greentrends/api/booking-id-details.php?booking_id=136",
+					"protocol": "http",
+					"host": [
+						"innowity",
+						"com"
+					],
+					"path": [
+						"greentrends",
+						"api",
+						"booking-id-details.php"
+					],
+					"query": [
+						{
+							"key": "booking_id",
+							"value": "136",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "3e3e336bb51650b126ff869ce76ebff6",
+						"description": ""
+					},
+					{
+						"key": "",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"booking_id\" : 135,\r\n  \"feedback\": \"nice service rendered\"\r\n}\r\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
 			"name": "14th requirement - Combo names",
 			"request": {
 				"url": "http://innowity.com/greentrends/api/combo-names.php",
@@ -581,6 +628,84 @@
 				"body": {
 					"mode": "raw",
 					"raw": "{\r\n\r\n  \"notes\": \"cancelled because of time schedule\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "15th requirement - feedback",
+			"request": {
+				"url": "http://innowity.com/greentrends/api/feedback.php",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "3e3e336bb51650b126ff869ce76ebff6",
+						"description": ""
+					},
+					{
+						"key": "",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"booking_id\" : 135,\r\n  \"feedback\": \"nice service rendered\"\r\n}\r\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "16th requirement - banners",
+			"request": {
+				"url": "http://innowity.com/greentrends/api/banners.php",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "3e3e336bb51650b126ff869ce76ebff6",
+						"description": ""
+					},
+					{
+						"key": "",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"booking_id\" : 135,\r\n  \"feedback\": \"nice service rendered\"\r\n}\r\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "17th requirement - razor pay",
+			"request": {
+				"url": "http://innowity.com/greentrends/api/razor.php",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "3e3e336bb51650b126ff869ce76ebff6",
+						"description": ""
+					},
+					{
+						"key": "",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"booking_id\" : 133,\r\n  \"razor_id\": 123456\r\n}"
 				},
 				"description": ""
 			},
