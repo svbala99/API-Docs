@@ -27,7 +27,7 @@
 			},
 			"response": [
 				{
-					"id": "78ea4ce7-d270-4c9f-90a7-1b85c0b50efe",
+					"id": "362b9538-ca5e-47b1-bbb1-bfc493ee8d09",
 					"name": "1st Requirement - Sending OTP",
 					"originalRequest": {
 						"url": "http://localhost/greentrends/otp-send.php",
@@ -84,7 +84,7 @@
 					"body": "{\n    \"data\": {\n        \"message\": \"OTP sent successfully\"\n    }\n}"
 				},
 				{
-					"id": "653a258e-beec-4eb3-9424-456817514dc9",
+					"id": "679056e6-e867-4d1b-af04-b107b8e72038",
 					"name": "1st Requirement - Sending OTP",
 					"originalRequest": {
 						"url": "http://localhost/greentrends/otp-send.php",
@@ -162,7 +162,7 @@
 			},
 			"response": [
 				{
-					"id": "ee544a32-dfb4-470f-82d5-1529a52c393e",
+					"id": "87ef6de4-eead-44fc-83ac-18116a62b52c",
 					"name": "2nd Requirement - OTP verify",
 					"originalRequest": {
 						"url": "http://localhost/greentrends/otp-verify.php",
@@ -233,7 +233,7 @@
 					},
 					{
 						"key": "x-auth-token",
-						"value": "a29d28b52aeb61e5872c6700ce68bf43",
+						"value": "664dbdd686f502afbe4b4a719004fa27",
 						"description": ""
 					}
 				],
@@ -245,7 +245,7 @@
 			},
 			"response": [
 				{
-					"id": "adc2da4d-7d49-454c-adb9-07b392e20533",
+					"id": "e43907ae-bb06-4dd1-8a39-8aa0b69f1764",
 					"name": "3rd Requirement - Update Profile",
 					"originalRequest": {
 						"url": "http://localhost/greentrends/update-profile.php",
@@ -312,7 +312,7 @@
 			"name": "4th requirement - services",
 			"request": {
 				"url": {
-					"raw": "http://innowity.com/greentrends/api/services.php?gender=female&combo=no",
+					"raw": "http://innowity.com/greentrends/api/services.php?gender=male&combo=yes",
 					"protocol": "http",
 					"host": [
 						"innowity",
@@ -326,13 +326,13 @@
 					"query": [
 						{
 							"key": "gender",
-							"value": "female",
+							"value": "male",
 							"equals": true,
 							"description": ""
 						},
 						{
 							"key": "combo",
-							"value": "no",
+							"value": "yes",
 							"equals": true,
 							"description": ""
 						}
@@ -343,7 +343,7 @@
 				"header": [
 					{
 						"key": "x-auth-token",
-						"value": "a29d28b52aeb61e5872c6700ce68bf43",
+						"value": "664dbdd686f502afbe4b4a719004fa27",
 						"description": ""
 					}
 				],
@@ -377,13 +377,13 @@
 				"header": [
 					{
 						"key": "x-auth-token",
-						"value": "a29d28b52aeb61e5872c6700ce68bf43",
+						"value": "664dbdd686f502afbe4b4a719004fa27",
 						"description": ""
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"service_id\":4\r\n}"
+					"raw": "{\r\n    \"service_id\":6\r\n}"
 				},
 				"description": ""
 			},
@@ -413,19 +413,21 @@
 			"name": "8th requirement - view bookings",
 			"request": {
 				"url": {
-					"raw": "http://localhost/greentrends/view-bookings.php?status=5",
+					"raw": "http://innowity.com/greentrends/api/view-bookings.php?status=1",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"innowity",
+						"com"
 					],
 					"path": [
 						"greentrends",
+						"api",
 						"view-bookings.php"
 					],
 					"query": [
 						{
 							"key": "status",
-							"value": "5",
+							"value": "1",
 							"equals": true,
 							"description": ""
 						}
@@ -436,7 +438,7 @@
 				"header": [
 					{
 						"key": "x-auth-token",
-						"value": "83ef25ee11e579067fc5dbeaf3fd2cc8",
+						"value": "664dbdd686f502afbe4b4a719004fa27",
 						"description": ""
 					},
 					{
@@ -462,7 +464,7 @@
 				"header": [
 					{
 						"key": "x-auth-token",
-						"value": "a29d28b52aeb61e5872c6700ce68bf43",
+						"value": "664dbdd686f502afbe4b4a719004fa27",
 						"description": ""
 					},
 					{
@@ -488,7 +490,7 @@
 				"header": [
 					{
 						"key": "x-auth-token",
-						"value": "a29d28b52aeb61e5872c6700ce68bf43",
+						"value": "664dbdd686f502afbe4b4a719004fa27",
 						"description": ""
 					},
 					{
@@ -500,7 +502,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"date\": \"23-Aug-2019\",\r\n  \"time\" : \"09:00AM\",\r\n  \"notes\": \"six thirty time notes\"\r\n}"
+					"raw": "{\r\n  \"date\": \"27-Aug-2019\",\r\n  \"time\" : \"04:00AM\",\r\n  \"notes\": \"six thirty time notes\"\r\n}"
 				},
 				"description": ""
 			},
@@ -514,7 +516,7 @@
 				"header": [
 					{
 						"key": "x-auth-token",
-						"value": "a29d28b52aeb61e5872c6700ce68bf43",
+						"value": "664dbdd686f502afbe4b4a719004fa27",
 						"description": ""
 					},
 					{
@@ -526,7 +528,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"booking_id\" : 143,\r\n  \"date\": \"31-Aug-2019\",\r\n  \"time\" : \"10:00AM\",\r\n  \"notes\": \"new comment is this beacuse something bla bla\"\r\n}"
+					"raw": "{\r\n  \"booking_id\" : 150,\r\n  \"date\": \"31-Aug-2019\",\r\n  \"time\" : \"10:00AM\",\r\n  \"notes\": \"new comment is this beacuse something bla bla\"\r\n}"
 				},
 				"description": ""
 			},
@@ -613,7 +615,7 @@
 				"header": [
 					{
 						"key": "x-auth-token",
-						"value": "a29d28b52aeb61e5872c6700ce68bf43",
+						"value": "664dbdd686f502afbe4b4a719004fa27",
 						"description": ""
 					},
 					{
@@ -713,7 +715,7 @@
 			"name": "18th requirement - Slots",
 			"request": {
 				"url": {
-					"raw": "http://innowity.com/greentrends/api/slots.php?date=22-Aug-2019",
+					"raw": "http://innowity.com/greentrends/api/slots.php?date=20-Aug-2019",
 					"protocol": "http",
 					"host": [
 						"innowity",
@@ -727,7 +729,7 @@
 					"query": [
 						{
 							"key": "date",
-							"value": "22-Aug-2019",
+							"value": "20-Aug-2019",
 							"equals": true,
 							"description": ""
 						}
@@ -738,7 +740,7 @@
 				"header": [
 					{
 						"key": "x-auth-token",
-						"value": "a29d28b52aeb61e5872c6700ce68bf43",
+						"value": "664dbdd686f502afbe4b4a719004fa27",
 						"description": ""
 					},
 					{
