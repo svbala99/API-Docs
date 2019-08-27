@@ -1,0 +1,75 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Goan - Innowity",
+		"_postman_id": "de0497ff-2d5f-3fd1-8ca8-bc653cb10345",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Banners",
+			"request": {
+				"url": "http://innowity.com/uwtgoan/banners-list.php",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Flowers List",
+			"request": {
+				"url": {
+					"raw": "http://innowity.com/uwtgoan/flowers-list.php?occasion=Birthday",
+					"protocol": "http",
+					"host": [
+						"innowity",
+						"com"
+					],
+					"path": [
+						"uwtgoan",
+						"flowers-list.php"
+					],
+					"query": [
+						{
+							"key": "occasion",
+							"value": "Birthday",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Obituaries List",
+			"request": {
+				"url": "http://innowity.com/uwtgoan/obituaries-list.php",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Occasions list",
+			"request": {
+				"url": "http://innowity.com/uwtgoan/occasions-list.php",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
