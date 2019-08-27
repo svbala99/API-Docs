@@ -70,6 +70,17 @@
 				"description": ""
 			},
 			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"url": "http://innowity.com/uwtgoan/occasions-list.php",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
 		}
 	]
 }
