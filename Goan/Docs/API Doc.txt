@@ -302,13 +302,25 @@ Request body:-
 }
 Response body:-
 {
-    "data": [
-        {
-            "message": "Logged in successfully",
-            "user_id": 1,
-            "name": "bala"
+    "data": {
+        "message": "Login Successful",
+        "userDetails": {
+            "user_id": 33,
+            "password": "123456",
+            "cell": "9600297967",
+            "fcm_id": "abc123",
+            "name": "john cena",
+            "email": "svbala99@hotmail.com",
+            "dob": "12 February, 1991",
+            "gender": "male",
+            "dp_url": "https://aasdasdasd.com",
+            "proof_type": "1",
+            "proof_front_url": "httpss",
+            "proof_back_url": "httpss back side URL",
+            "Account Created": "2019-08-27 13:44:27",
+            "Last updated": "29 August,2019 11:27:10"
         }
-    ]
+    }
 }
 
 Mobile number or password not set, or invalid input
