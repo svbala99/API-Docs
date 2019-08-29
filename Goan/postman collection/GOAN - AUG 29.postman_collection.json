@@ -83,12 +83,14 @@
 				"header": [
 					{
 						"key": "Content-Type",
-						"value": "application/json"
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"name\": \"bavani\",\n\t\"cell\": \"9600297967\",\n\t\"email\": \"bavani@gmail.com\",\n\t\"password\": \"123456\",\n\t\"dob\":\"01-Jan-1991\",\n\t\"gender\":\"female\",\n\t\"fcm_id\": \"abc123\"\n}"
+					"raw": "{\n\t\"name\": \"bavani\",\n\t\"cell\": \"9200920092\",\n\t\"email\": \"bavani@gmail.com\",\n\t\"password\": \"123456\",\n\t\"dob\":\"01-Jan-1991\",\n\t\"gender\":\"female\",\n\t\"fcm_id\": \"abc123\"\n}"
 				},
 				"url": "http://innowity.com/uwtgoan/register.php"
 			},
@@ -350,6 +352,20 @@
 						}
 					]
 				}
+			},
+			"response": []
+		},
+		{
+			"name": "17. Static Pages",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": "http://innowity.com/uwtgoan/static.php"
 			},
 			"response": []
 		}

@@ -898,6 +898,23 @@ Response:-
 }
 
 
+Endpoint 17 Static Contents Sample
+---------------------------------------------------------
+GET	http://innowity.com/uwtgoan/static.php
+
+//empty req body
+
+Response:-
+
+{
+    "subscription": "We understand the difficulties families face when a relative dies abroad. We will simplify the process, managing all repatriation documentation and transport arrangements for you. Our multi-lingual team provide the best support to help you and your loved one return home by providing a professional, courteous and sympathetic service.",
+    "about_us": "Established in 1873 as family funeral directors, Rowland Brothers International (RBI) has been at the heart of global funeral repatriation since 1971.Established in 1873 as family funeral directors, Rowland Brothers International (RBI) has been at the heart of global funeral repatriation since 1971.Established in 1873 as family funeral directors, Rowland Brothers International (RBI) has been at the heart of global funeral repatriation since 1971.Established in 1873 as family funeral directors, Rowland Brothers International (RBI) has been at the heart of global funeral repatriation since 1971.Established in 1873 as family funeral directors, Rowland Brothers International (RBI) has been at the heart of global funeral repatriation since 1971.\r\n",
+    "our_services": "Established in 1873 as family funeral directors, Rowland Brothers International (RBI) has been at the heart of global funeral repatriation since 1971.Established in 1873 as family funeral directors, Rowland Brothers International (RBI) has been at the heart of global funeral repatriation since 1971.Established in 1873 as family funeral directors, Rowland Brothers International (RBI) has been at the heart of global funeral repatriation since 1971.Established in 1873 as family funeral directors, Rowland Brothers International (RBI) has been at the heart of global funeral repatriation since 1971.Established in 1873 as family funeral directors, Rowland Brothers International (RBI) has been at the heart of global funeral repatriation since 1971.Established in 1873 as family funeral directors, Rowland Brothers International (RBI) has been at the heart of global funeral repatriation since 1971."
+}
+
+
+
+
 
 For all endpoints:-
 -------------------------------------------------
