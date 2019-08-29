@@ -760,26 +760,34 @@ Response:-
     }
 }
 
-Endpoint 15 View Booked Item Details
+Endpoint 15 View Booked Item Details  15.1 (type 1 = subscription)
 ---------------------------------------------------------
-GET	http://innowity.com/uwtgoan/view-booked-item.php?user_id=33&booking_id=22
-
-If delivery date is in future in all APIs, it will be displayed like:-
-"Delivering on": "31 August, 2019"
-
-If delivery date is in past in all APIs, it will be displayed like:-
-Delivered on": "26 August, 2019"
-
-#################################################################################
-Note:- currently, only type 2 item booking can be viewed. others are in progress...
+GET	http://innowity.com/uwtgoan/view-booked-item.php?user_id=33&booking_id=17
 
 Response:-
 {
     "data": {
-        "Booking ID": 22,
+        "Booking ID": 17,
+        "Total": "Rs.1050",
+        "Description": "Goan subscription (1 year)",
+        "sub_total": "Rs.1000",
+        "Purchased On": "29 August, 2019",
+        "Expiring on": "30 August, 2019",
+        "tax": "Rs.50"
+    }
+}
+
+Endpoint 15 View Booked Item Details  15.2 (type 2 = send flowers)
+---------------------------------------------------------
+GET	http://innowity.com/uwtgoan/view-booked-item.php?user_id=33&booking_id=18
+
+Response:-
+{
+    "data": {
+        "Booking ID": 18,
         "Total": "Rs.1050",
         "Flower URL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0dfiApAWz3x5ExVU6b4hvADU6-WqIhd8tOHd_6w-yF1c9RqOt210",
-        "Description": "Flowers for other category wishes",
+        "Description": "Flower for Birthday wishes",
         "sub_total": "Rs.1000",
         "Order Placed": "29 August, 2019",
         "Delivering on": "31 August, 2019",
@@ -788,6 +796,31 @@ Response:-
 }
 
 
+Endpoint 15 View Booked Item Details  15.3 (type 3 = Obituary post)
+---------------------------------------------------------
+GET	http://innowity.com/uwtgoan/view-booked-item.php?user_id=33&booking_id=19
+
+Response:-
+{
+    "data": {
+        "Booking ID": 19,
+        "Total": "Rs.1050",
+        "Image URL": "https:adssdasdasd",
+        "Name": "bala",
+        "Date of Birth": "20-06-1960",
+        "Date of Death": "2019-05-06",
+        "location": "asdasjd",
+        "Description": "Standard Obituary Post (2 days)",
+        "sub_total": "Rs.1000",
+        "Post created": "29 August, 2019",
+        "Post Expiring on": "31 August, 2019",
+        "tax": "Rs.50"
+    }
+}
+
+Note: dob, dod are just strings. now it is like that in DB.
+ from next time onwards when u create new obituary.post, give whatever format you want: 10 August, 2001  
+ It will be stored as string as such.
 
 
 Endpoint 16 - Subscriptions List
