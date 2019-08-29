@@ -317,12 +317,11 @@ Response body:-
             "proof_type": "1",
             "proof_front_url": "httpss",
             "proof_back_url": "httpss back side URL",
-            "Account Created": "2019-08-27 13:44:27",
+            "Account Created": "27 August, 2019 13:44:27",
             "Last updated": "29 August,2019 11:27:10"
         }
     }
 }
-
 Mobile number or password not set, or invalid input
 {
     "error": {
