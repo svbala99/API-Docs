@@ -1,0 +1,866 @@
+Endpoint 1
+-------------------------------------------------
+GET 	http://innowity.com/uwtgoan/banners-list.php
+
+No request header and request body
+Response body:-
+{
+    "data": {
+        "banners": [
+            {
+                "id": 1,
+                "url": "https://thenypost.files.wordpress.com/2018/01/istock-155911571.jpg?quality=90&strip=all&w=618&h=410&crop=1"
+            },
+            {
+                "id": 2,
+                "url": "https://i.ytimg.com/vi/bM_z10WCQ_4/hqdefault.jpg"
+            },
+            {
+                "id": 3,
+                "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt3NTDp_ki-ZqF2Po2ID9yXFsy_fnEGvj-_erlZihBJIB5qSl6"
+            },
+            {
+                "id": 4,
+                "url": "https://cdn-03.belfasttelegraph.co.uk/incoming/article38226154.ece/85d5e/AUTOCROP/w620/Colin_McGarry_funeral003.jpg"
+            },
+            {
+                "id": 5,
+                "url": "https://c8.alamy.com/comp/E6HFF8/four-men-carry-a-coffin-into-a-church-as-part-of-a-funeral-service-E6HFF8.jpg"
+            },
+            {
+                "id": 6,
+                "url": "https://i1.wp.com/metro.co.uk/wp-content/uploads/2019/01/sei_47954830-fb0e.jpg?quality=90&strip=all&zoom=1&resize=768%2C511&ssl=1"
+            },
+            {
+                "id": 7,
+                "url": "https://www.army.gov.au/sites/default/files/images/page/20150910adf0000_3.t55f0c80a.m600.x8254f72a.jpg"
+            },
+            {
+                "id": 8,
+                "url": "https://www.abc.net.au/news/image/1375030-3x2-340x227.jpg"
+            }
+        ]
+    }
+}
+
+Endpoint 2
+-------------------------------------------------------------------------------
+GET 	http://innowity.com/uwtgoan/flowers-list.php
+No request header and request body
+Response body:-
+{
+    "data": {
+        "Flowers": [
+            {
+                "id": 1,
+                "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOAOrLMY-UXd_Yt7H_lTNNRd05b2fAR2STfn_dNz4XcWQZxTA04A",
+                "name": "Flower for Birthday Greetings",
+                "price": "Rs.100",
+                "occasion": "Birthday"
+            },
+            {
+                "id": 2,
+                "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs8daYZ8LwpVqMcAKW3WU8p1RIElyyfEG3ch51JcAAgt-H_0wiOg",
+                "name": "Flower for Birthday Greetings",
+                "price": "Rs.110",
+                "occasion": "Birthday"
+            },
+            {
+                "id": 3,
+                "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuoQ6TZL2nwcC1aKIdViVkZZYKO5YGmIfmHsoPVbEpoWQw7BbsBg",
+                "name": "Flowers for Wedding wishes",
+                "price": "Rs.120",
+                "occasion": "Wedding"
+            },
+            {
+                "id": 4,
+                "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyc8nQV1PhCCw-pCp3FJqZDjDnOXQeGLXuDy8kUm-d-6gWHBNSlA",
+                "name": "Flowers for Wedding wishes",
+                "price": "Rs.130",
+                "occasion": "Wedding"
+            },
+            {
+                "id": 5,
+                "url": "https://www.pinclipart.com/picdir/middle/168-1689719_clip-art-free-stock-of-flowers-png-image.png",
+                "name": "Flowers for Anniversary wishes",
+                "price": "Rs.140",
+                "occasion": "Anniversary"
+            },
+            {
+                "id": 6,
+                "url": "https://p7.hiclipart.com/preview/39/989/84/flower-bouquet-rose-clip-art-bouquet-flowers-png.jpg",
+                "name": "Flowers for Anniversary wishes",
+                "price": "Rs.150",
+                "occasion": "Anniversary"
+            },
+            {
+                "id": 7,
+                "url": "https://www.trzcacak.rs/myfile/detail/10-108056_of-flowers-png-image-transparent-background-bouquet-of.png",
+                "name": "Flowers for Retirement wishes",
+                "price": "Rs.160",
+                "occasion": "Retirement"
+            },
+            {
+                "id": 8,
+                "url": "https://www.pngkey.com/png/detail/10-106824_flower-bouquet-transparent-background.png",
+                "name": "Flowers for Retirement wishes",
+                "price": "Rs.170",
+                "occasion": "Retirement"
+            },
+            {
+                "id": 9,
+                "url": "https://www.pinclipart.com/picdir/middle/168-1689717_transparent-red-roses-bouquet-png-clipart-picture-spring.png",
+                "name": "Flowers for Get Well soon wishes",
+                "price": "Rs.180",
+                "occasion": "Get Well"
+            },
+            {
+                "id": 10,
+                "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4WxS65TYUJyuFvs-FuCncnDmzpzQ3fe4j5zzU6dVt3Fv7Hfrl",
+                "name": "Flowers for Get Well soon wishes",
+                "price": "Rs.190",
+                "occasion": "Get Well"
+            },
+            {
+                "id": 11,
+                "url": "https://www.pnglot.com/pngfile/detail/111-1110922_rose-bouquet-cl-transparent-background-flowers-png.png",
+                "name": "Flowers for other category wishes",
+                "price": "Rs.200",
+                "occasion": "Others"
+            },
+            {
+                "id": 12,
+                "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0dfiApAWz3x5ExVU6b4hvADU6-WqIhd8tOHd_6w-yF1c9RqOt210",
+                "name": "Flowers for other category wishes",
+                "price": "Rs.210",
+                "occasion": "Others"
+            }
+        ]
+    }
+}
+
+Endpoint 2.1
+-------------------------------------------------------------------
+GET 	http://innowity.com/uwtgoan/flowers-list.php ?occasion=Birthday
+No request header and request body
+Response body:-
+{
+    "data": {
+        "Flowers": [
+            {
+                "id": 1,
+                "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOAOrLMY-UXd_Yt7H_lTNNRd05b2fAR2STfn_dNz4XcWQZxTA04A",
+                "name": "Flower for Birthday Greetings",
+                "price": "Rs.100",
+                "occasion": "Birthday"
+            },
+            {
+                "id": 2,
+                "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs8daYZ8LwpVqMcAKW3WU8p1RIElyyfEG3ch51JcAAgt-H_0wiOg",
+                "name": "Flower for Birthday Greetings",
+                "price": "Rs.110",
+                "occasion": "Birthday"
+            }
+        ]
+    }
+}
+
+
+
+
+
+Endpoint 3
+----------------------------------------------------------------------------
+GET 	http://innowity.com/uwtgoan/obituaries-list.php
+No request header and request body
+Response body:-
+{
+    "data": {
+        "Obituaries": [
+            {
+                "id": 1,
+                "url": "https://toppng.com/public/uploads/preview/old-man-smiling-11549878759tjvbnenohy.png",
+                "name": "Dani Alves",
+                "location": "Nottingham",
+                "dob": "01 January, 1960",
+                "dod": "22 August, 2019",
+                "msg": "It is with great sadness that the family of Alex Downton Forbes announces his passing after a brief illness, on Saturday, April 3, 2014, at the age of 70 years. Alex will be lovingly remembered by his wife of 45 years, Joan and his children, Mike (Judy), Brad (Jill), Sue (Dan) Armandeau, and Ryan (Heidi)."
+            },
+            {
+                "id": 2,
+                "url": "https://www.pinpng.com/pngs/m/63-636931_free-png-download-shrug-emoji-old-man-png.png",
+                "name": "Bradshaw Henry",
+                "location": "Southampton",
+                "dob": "22 August, 1954",
+                "dod": "22 August, 2019",
+                "msg": "On Monday, February 3, 2014, Laura Riley, wife, mother, daughter and sister, passed away suddenly at the age of 36 years. Laura will be forever remembered by her husband and best friend Greg, and their precious children, Cody and Pamela"
+            },
+            {
+                "id": 3,
+                "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWH4VMzX_YiuMXuO-oLu_pu3TFeSn6gLwXe-LIznwf6OvvIiYeLg",
+                "name": "Duncan Chrishold",
+                "location": "Wellington",
+                "dob": "26 May, 1966",
+                "dod": "05 August, 2017",
+                "msg": "John Dalton, known to friends as \"Jack,\" passed away on September 4, 2014, at the age of 78 years."
+            },
+            {
+                "id": 4,
+                "url": "https://www.sccpre.cat/mypng/full/500-5000226_michael-caine-on-youth-quasi-retirement-and-his.png",
+                "name": "John Stephenson",
+                "location": "Lucknow",
+                "dob": "01 August, 1670",
+                "dod": "22 August, 2019",
+                "msg": "He is survived by his wife of 53 years, Cora (nee Dechant), sons Colin, Jr. (Lori) and Adam (Jacquie), 10 grandchildren, and one great-grandchild."
+            },
+            {
+                "id": 5,
+                "url": "https://images.freeimages.com/images/premium/previews/5172/51723824-old-man-in-cap-on-black-background.jpg",
+                "name": "Warren Smith",
+                "location": "Auckland",
+                "dob": "04 August, 1966",
+                "dod": "05 August, 2019",
+                "msg": "Jack served on the boards of numerous organizations, including Evergreen Park and the Tepee Creek Stampede, Parkinson's Research Foundation, as well as chair of the Alberta Toastmasters for three years."
+            },
+            {
+                "id": 6,
+                "url": "asadasd",
+                "name": "asdasd",
+                "location": "adasdsad",
+                "dob": "01 January, 1970",
+                "dod": "01 January, 1970",
+                "msg": "adasdasdasdasdasd"
+            },
+            {
+                "id": 7,
+                "url": "https:adssdasdasd",
+                "name": "bala",
+                "location": "asdasjd",
+                "dob": "20 June, 1960",
+                "dod": "01 January, 1970",
+                "msg": "Miss you dear father"
+            },
+            {
+                "id": 8,
+                "url": "asdasd",
+                "name": "asdasd",
+                "location": "asdasd",
+                "dob": "29 August, 2019",
+                "dod": "29 August, 2019",
+                "msg": "adasd"
+            },
+            {
+                "id": 9,
+                "url": "https:adssdasdasd",
+                "name": "bala",
+                "location": "asdasjd",
+                "dob": "20 June, 1960",
+                "dod": "01 January, 1970",
+                "msg": "Miss you dear father"
+            },
+            {
+                "id": 10,
+                "url": "https:adssdasdasd",
+                "name": "bala",
+                "location": "asdasjd",
+                "dob": "20 June, 1960",
+                "dod": "01 January, 1970",
+                "msg": "Miss you dear father"
+            }
+        ]
+    }
+}
+
+Endpoint 4
+---------------------------------------------------------
+GET 	http://innowity.com/uwtgoan/occasions-list.php
+No request header and request body
+Response body:-
+{
+    "data": {
+        "occasions": [
+            "Anniversary",
+            "Birthday",
+            "Get Well",
+            "Others",
+            "Retirement",
+            "Wedding"
+        ]
+    }
+}
+
+
+Endpoint 5
+-------------------------------------------------------------
+POST 	http://innowity.com/uwtgoan/login.php
+// cell and password validated
+
+Request body:-
+{
+	"cell": "9600297967",
+	"password": "Uniq@123"
+}
+Response body:-
+{
+    "data": {
+        "message": "Login Successful",
+        "userDetails": {
+            "user_id": 33,
+            "password": "Uniq@123",
+            "cell": "9600297967",
+            "fcm_id": "abc123",
+            "name": "john cena",
+            "email": "svbala99@hotmail.com",
+            "dob": "12 February, 1991",
+            "gender": "male",
+            "dp_url": "https://i.pravatar.cc/300",
+            "proof_type": 1,
+            "proof_front_url": "https://dummyimage.com/300",
+            "proof_back_url": "https://dummyimage.com/300",
+            "Account Created": "27 August, 2019 01:44:27 PM",
+            "Last updated": "29 August,2019 11:56:44 PM"
+        }
+    }
+}
+
+
+Endpoint 6
+-----------------------------------------------------------------
+POST 	http://innowity.com/uwtgoan/register.php
+//all fields mandatory
+//cell, password validated
+
+Request body:-
+{
+	"name": "bavani",
+	"cell": "920092002",
+	"email": "bavani@gmail.com",
+	"password": "Uniq@123",
+	"dob":"01 January, 1991",
+	"gender":"female",
+	"fcm_id": "abc123"
+}
+
+Response body:-
+{
+    "data": {
+        "message": "Details stored and OTP sent successfully",
+        "user_id": 33,
+        "name": "bavani"
+    }
+}
+
+Endpoint 7
+---------------------------------------------------------
+POST 	http://innowity.com/uwtgoan/otp-verify.php
+
+//all params validated
+
+Request body:-
+{
+	"otp": "1234",
+	"cell": "9578879420"
+}
+
+Response Body:-
+
+If not new user, but trying to reset password:-
+{
+    "data": {
+        "userDetails": {
+            "user_id": 33,
+            "password": "Uniq@123",
+            "cell": "9600297967",
+            "fcm_id": "abc123",
+            "name": "john cena",
+            "email": "svbala99@hotmail.com",
+            "dob": "12 February, 1991",
+            "gender": "male",
+            "dp_url": "https://i.pravatar.cc/300",
+            "proof_type": "1",
+            "proof_front_url": "https://dummyimage.com/300",
+            "proof_back_url": "https://dummyimage.com/300",
+            "created_on": "27 August, 2019"
+        }
+    }
+}
+
+If new user:-
+{
+    "data": {
+        "userDetails": {
+            "user_id": 39,
+            "password": "Uniq@123",
+            "cell": "9578879420",
+            "fcm_id": "abc123",
+            "name": "bavani",
+            "email": "bavani@gmail.com",
+            "dob": "01 January, 1991",
+            "gender": "female",
+            "dp_url": null,
+            "proof_type": null,
+            "proof_front_url": null,
+            "proof_back_url": null,
+            "created_on": "29 August, 2019"
+        }
+    }
+}
+
+Endpoint 8
+---------------------------------------------------------
+PATCH 	http://innowity.com/uwtgoan/upload-proof.php
+// all params mandatory. If user wishes not to change dp_url, give old dp_url
+//If you give dp_url=''   then empty string will be updated. Kindly take care here.
+
+Request body:-
+{
+	"user_id": "33",
+	"proof_type": "1",
+	"proof_front_url": "https://dummyimage.com/500",
+	"proof_back_url": "https://dummyimage.com/300",
+	"dp_url": "https://i.pravatar.cc/300"
+}
+
+
+Response:-
+{
+    "data": {
+        "message": "ID Proof uploaded successfully",
+        "user_id": 33
+    }
+}
+
+
+
+Endpoint 9.1 // Add Type 1 - Buy Subscription
+---------------------------------------------------------
+POST 	http://innowity.com/uwtgoan/cart-add.php
+//all params mandatory
+
+Request body:-
+{
+	"user_id": "33",
+	"type": "1",
+	"end_date": "30 August, 2019",
+	"t1_abroad_addr": "address abroad is this",
+	"t1_indian_addr": "indian address something",
+	"contact_name": "bala",
+	"contact_cell":"9600297967",
+	"t1_emerg_indian_num":"1234567890",
+	"t1_emerg_abroad_num":"1234567890",
+	"item_description":"Goan subscription (1 year)",
+	"sub_total":"1000",
+	"tax":"50",
+	"total":"1050"
+}
+
+Response:-
+{
+    "data": {
+        "message": "Item added to cart successfully",
+        "cart_id": 87,
+        "added_on": "30 August,2019 02:14:18 AM"
+    }
+}
+
+Endpoint 9.2 // Add Type 2 - Send Flowers
+---------------------------------------------------------
+POST 	http://innowity.com/uwtgoan/cart-add.php
+//all params mandatory
+
+Request body:-
+{
+	"user_id": "33",
+	"type": "2",
+	"type2_id": "12",
+	"receiver_name": "bala",
+	"receiver_cell":"9600297967",
+	"receiver_addr":"asdasjd asdasidj asdjai",
+	"receiver_msg":"Getwel soon asdasdasdsda",
+	"end_date": "31 August,2019",
+	"item_description":"Flower for Birthday wishes",
+	"sub_total":"1000",
+	"tax":"50",
+	"total":"1050"
+}
+
+Response:-
+{
+    "data": {
+        "message": "Item added to cart successfully",
+        "cart_id": 88,
+        "added_on": "30 August,2019 02:15:33 AM"
+    }
+}
+
+Endpoint 9.3 // Add Type 3 - Create Obituary Post
+---------------------------------------------------------
+POST 	http://innowity.com/uwtgoan/cart-add.php
+
+//all params mandatory
+
+Request body:-
+{
+	"user_id": "33",
+	"type": "3",
+	"image_url":"https:adssdasdasd",
+	"name": "bala",
+	"addr":"asdasjd",
+	"dob":"12 February, 1991",
+	"dod":"11 November, 2001",
+	"msg":"Miss you dear father",
+	"end_date": "31 August, 2019",
+	"item_description":"Standard Obituary Post (2 days)",
+	"sub_total":"1000",
+	"tax":"50",
+	"total":"1050"
+}
+
+Response :-
+{
+    "data": {
+        "message": "Item added to cart successfully",
+        "cart_id": 90,
+        "added_on": "30 August,2019 02:20:50 AM"
+    }
+}
+
+
+Endpoint 10 Book
+---------------------------------------------------------
+POST 	http://innowity.com/uwtgoan/book.php
+
+// all three params are mandatory
+//userid and cart id validated
+
+
+Request body:-
+{
+	"user_id": "33",
+	"cart_id": "81",
+	"razor_id": "abc123"
+} 
+
+Response:-
+{
+    "data": {
+        "message": "Booking done successfully",
+        "user_id": 33,
+        "booking_id": 22,
+        "booked on": "30 August,2019 02:38:14 AM"
+    }
+}
+
+
+Endpoint 11 Tax
+---------------------------------------------------------
+GET	http://innowity.com/uwtgoan/tax.php
+
+//No input params or req body
+// Type 1 = buy subscription 2 = send flowers 3 = create obituary post
+// Tax percent is stored in DB from admin panel
+
+Response:-
+{
+    "data": {
+        "tax_details": [
+            {
+                "type": "1",
+                "tax_percent": "10"
+            },
+            {
+                "type": "2",
+                "tax_percent": "18"
+            },
+            {
+                "type": "3",
+                "tax_percent": "9"
+            }
+        ]
+    }
+}
+
+
+Endpoint 12 Contact Us - Query form
+---------------------------------------------------------
+POST http://innowity.com/uwtgoan/contact_us.php
+
+{
+	"name":"bala",
+	"cell":"9600297967",
+	"email":"svasdasd@gmail.com",
+	"msg":"asdasd asdasd afsa sfas fadfd fad dfasdas d asd asd asd"
+}
+
+//All params mandatory
+
+Response:-
+{
+    "data": {
+        "message": "Query submitted successfully",
+        "submitted_on": "30 August,2019 02:40:55 AM"
+    }
+}
+
+
+Endpoint 13 Update Profile
+---------------------------------------------------------
+PATCH	http://innowity.com/uwtgoan/update-profile.php
+//cell validated
+
+{
+	"user_id" : "33",
+	"name": "john cena",
+	"cell":"9600297967",
+	"email": "svbala99@hotmail.com",
+	"dob":"12 February, 1991",
+	"gender": "male",
+	"fcm_id":"abc123",
+	"dp_url":"https://aasdasdasd.com"
+}
+
+//All params mandatory
+
+Response:-
+{
+    "data": {
+        "message": "Updated successfully",
+        "Updated_on": "30 August,2019 02:43:37 AM"
+    }
+}
+
+Endpoint 14 View Booked List
+---------------------------------------------------------
+14.1 (type = 1 subscriptions)
+GET	http://innowity.com/uwtgoan/booked-list.php?user_id=33&type=1
+
+Response:-
+{
+    "data": {
+        "Subscriptions Booked": [
+            {
+                "booking_id": 12,
+                "Subscription Expiring on": "30 August, 2019",
+                "total": "Rs.1050"
+            },
+            {
+                "booking_id": 16,
+                "Subscription Expiring on": "30 August, 2019",
+                "total": "Rs.1050"
+            },
+            {
+                "booking_id": 17,
+                "Subscription Expiring on": "30 August, 2019",
+                "total": "Rs.1050"
+            },
+            {
+                "booking_id": 20,
+                "Subscription Expiring on": "30 August, 2019",
+                "total": "Rs.1050"
+            }
+        ]
+    }
+}
+
+14.2 (type = 2 subscriptions)
+GET	http://innowity.com/uwtgoan/booked-list.php?user_id=33&type=2
+
+Response:-
+{
+    "data": {
+        "Flowers Booked": [
+            {
+                "booking_id": 13,
+                "Delivered on": "26 August, 2019",
+                "total": "Rs.1050"
+            },
+            {
+                "booking_id": 15,
+                "Delivering on": "31 August, 2019",
+                "total": "Rs.1050"
+            },
+            {
+                "booking_id": 18,
+                "Delivering on": "31 August, 2019",
+                "total": "Rs.1050"
+            },
+            {
+                "booking_id": 21,
+                "Delivering on": "31 August, 2019",
+                "total": "Rs.1050"
+            },
+            {
+                "booking_id": 22,
+                "Delivering on": "31 August, 2019",
+                "total": "Rs.1050"
+            },
+            {
+                "booking_id": 24,
+                "Delivering on": "31 August, 2019",
+                "total": "Rs.1050"
+            }
+        ]
+    }
+}
+
+14.3 (type = 3 subscriptions)
+GET	http://innowity.com/uwtgoan/booked-list.php?user_id=33&type=3
+
+Response:-
+
+{
+    "data": {
+        "Obituary Posts Booked": [
+            {
+                "booking_id": 14,
+                "Obituary Post Expiring On": "31 August, 2019",
+                "total": "Rs.1050"
+            },
+            {
+                "booking_id": 19,
+                "Obituary Post Expiring On": "31 August, 2019",
+                "total": "Rs.1050"
+            },
+            {
+                "booking_id": 23,
+                "Obituary Post Expiring On": "31 August, 2019",
+                "total": "Rs.1050"
+            }
+        ]
+    }
+}
+
+
+
+Endpoint 15 View Booked Item Details  15.1 (type 1 = subscription)
+---------------------------------------------------------
+GET	http://innowity.com/uwtgoan/view-booked-item.php?user_id=33&booking_id=17
+
+Response:-
+{
+    "data": {
+        "Booking ID": 17,
+        "Total": "Rs.1050",
+        "Description": "Goan subscription (1 year)",
+        "sub_total": "Rs.1000",
+        "Purchased On": "29 August, 2019",
+        "Expiring on": "30 August, 2019",
+        "tax": "Rs.50"
+    }
+}
+
+Endpoint 15 View Booked Item Details  15.2 (type 2 = send flowers)
+---------------------------------------------------------
+GET	http://innowity.com/uwtgoan/view-booked-item.php?user_id=33&booking_id=18
+
+Response:-
+{
+    "data": {
+        "Booking ID": 18,
+        "Total": "Rs.1050",
+        "Flower URL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0dfiApAWz3x5ExVU6b4hvADU6-WqIhd8tOHd_6w-yF1c9RqOt210",
+        "Description": "Flower for Birthday wishes",
+        "sub_total": "Rs.1000",
+        "Order Placed": "29 August, 2019",
+        "Delivering on": "31 August, 2019",
+        "tax": "Rs.50"
+    }
+}
+
+
+Endpoint 15 View Booked Item Details  15.3 (type 3 = Obituary post)
+---------------------------------------------------------
+GET	http://innowity.com/uwtgoan/view-booked-item.php?user_id=33&booking_id=19
+
+Response:-
+{
+    "data": {
+        "Booking ID": 19,
+        "Total": "Rs.1050",
+        "Image URL": "https:adssdasdasd",
+        "Name": "bala",
+        "Date of Birth": "20 June, 1960",
+        "Date of Death": "01 January, 2018",
+        "location": "asdasjd",
+        "Description": "Standard Obituary Post (2 days)",
+        "sub_total": "Rs.1000",
+        "Post created": "29 August, 2019",
+        "Post Expiring on": "31 August, 2019",
+        "tax": "Rs.50"
+    }
+}
+
+Endpoint 16 Obituary Detailed View
+---------------------------------------------------------
+GET	http://innowity.com/uwtgoan/obituary-detailed-view.php?id=3
+
+//ID mandatory
+//empty req body
+
+Response:-
+
+{
+    "data": {
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWH4VMzX_YiuMXuO-oLu_pu3TFeSn6gLwXe-LIznwf6OvvIiYeLg",
+        "Name": "Duncan Chrishold",
+        "Date of Birth": "26 May, 1966",
+        "Date of Death": "05 August, 2017",
+        "Message": "John Dalton, known to friends as \"Jack,\" passed away on September 4, 2014, at the age of 78 years.",
+        "Location": "Wellington"
+    }
+}
+
+
+Endpoint 17 Static Contents Sample
+---------------------------------------------------------
+GET	http://innowity.com/uwtgoan/static.php
+
+//empty req body
+
+Response:-
+
+{
+    "subscription": "We understand the difficulties families face when a relative dies abroad. We will simplify the process, managing all repatriation documentation and transport arrangements for you. Our multi-lingual team provide the best support to help you and your loved one return home by providing a professional, courteous and sympathetic service.",
+    "about_us": "Established in 1873 as family funeral directors, Rowland Brothers International (RBI) has been at the heart of global funeral repatriation since 1971.Established in 1873 as family funeral directors, Rowland Brothers International (RBI) has been at the heart of global funeral repatriation since 1971.Established in 1873 as family funeral directors, Rowland Brothers International (RBI) has been at the heart of global funeral repatriation since 1971.Established in 1873 as family funeral directors, Rowland Brothers International (RBI) has been at the heart of global funeral repatriation since 1971.Established in 1873 as family funeral directors, Rowland Brothers International (RBI) has been at the heart of global funeral repatriation since 1971.\r\n",
+    "our_services": "Established in 1873 as family funeral directors, Rowland Brothers International (RBI) has been at the heart of global funeral repatriation since 1971.Established in 1873 as family funeral directors, Rowland Brothers International (RBI) has been at the heart of global funeral repatriation since 1971.Established in 1873 as family funeral directors, Rowland Brothers International (RBI) has been at the heart of global funeral repatriation since 1971.Established in 1873 as family funeral directors, Rowland Brothers International (RBI) has been at the heart of global funeral repatriation since 1971.Established in 1873 as family funeral directors, Rowland Brothers International (RBI) has been at the heart of global funeral repatriation since 1971.Established in 1873 as family funeral directors, Rowland Brothers International (RBI) has been at the heart of global funeral repatriation since 1971."
+}
+
+
+Endpoint 18 Forgot password and send OTP
+---------------------------------------------------------
+POST http://innowity.com/uwtgoan/forgot-password.php
+//cell mandatory and validated
+Request:-
+{
+	"cell":"9600297967"
+}
+
+Response:-
+{
+    "data": {
+        "message": "OTP sent to registered Mobile number"
+    }
+}
+
+Endpoint 19 Reset New password
+---------------------------------------------------------
+PATCH http://innowity.com/uwtgoan/reset-password.php
+//userid and password validated. 
+//password must be atleast 8 chars, must have atleast 1 upper case, 1 number, 1 spl char
+//this password policy is for all APIs
+
+Request:-
+{
+	"user_id":"33",
+	"password":"Uniq@1234"
+}
+
+Response:-
+{
+    "data": {
+        "message": "Password Reset Successfully",
+        "Updated On": "30 August,2019 02:52:33 AM"
+    }
+}
+
+******************************************************************************************************
