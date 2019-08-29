@@ -711,16 +711,41 @@ Response:-
     }
 }
 
-Endpoint 14 Booked Flowers List
+Endpoint 14 View Booked List
 ---------------------------------------------------------
-GET	http://innowity.com/uwtgoan/booked-flowers.php?user_id=33
+14.1 (type = 1 subscriptions)
+GET	http://innowity.com/uwtgoan/booked-list.php?user_id=33&type=1
 
-If delivery date is in future in all APIs
-"Delivering on": "31 August, 2019"
+Response:-
+{
+    "data": {
+        "Subscriptions Booked": [
+            {
+                "booking_id": 12,
+                "Subscription Expiring on": "30 August, 2019",
+                "total": "Rs.1050"
+            },
+            {
+                "booking_id": 16,
+                "Subscription Expiring on": "30 August, 2019",
+                "total": "Rs.1050"
+            },
+            {
+                "booking_id": 17,
+                "Subscription Expiring on": "30 August, 2019",
+                "total": "Rs.1050"
+            },
+            {
+                "booking_id": 20,
+                "Subscription Expiring on": "30 August, 2019",
+                "total": "Rs.1050"
+            }
+        ]
+    }
+}
 
-If delivery date is in past in all APIs
-Delivered on": "26 August, 2019"
-
+14.2 (type = 2 subscriptions)
+GET	http://innowity.com/uwtgoan/booked-list.php?user_id=33&type=2
 
 Response:-
 {
@@ -759,6 +784,35 @@ Response:-
         ]
     }
 }
+
+14.3 (type = 3 subscriptions)
+GET	http://innowity.com/uwtgoan/booked-list.php?user_id=33&type=3
+
+Response:-
+
+{
+    "data": {
+        "Obituary Posts Booked": [
+            {
+                "booking_id": 14,
+                "Obituary Post Expiring On": "31 August, 2019",
+                "total": "Rs.1050"
+            },
+            {
+                "booking_id": 19,
+                "Obituary Post Expiring On": "31 August, 2019",
+                "total": "Rs.1050"
+            },
+            {
+                "booking_id": 23,
+                "Obituary Post Expiring On": "31 August, 2019",
+                "total": "Rs.1050"
+            }
+        ]
+    }
+}
+
+
 
 Endpoint 15 View Booked Item Details  15.1 (type 1 = subscription)
 ---------------------------------------------------------
