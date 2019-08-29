@@ -50,7 +50,7 @@ No request header and request body
 Response body:-
 {
     "data": {
-        "banners": [
+        "Flowers": [
             {
                 "id": 1,
                 "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOAOrLMY-UXd_Yt7H_lTNNRd05b2fAR2STfn_dNz4XcWQZxTA04A",
@@ -146,7 +146,7 @@ No request header and request body
 Response body:-
 {
     "data": {
-        "banners": [
+        "Flowers": [
             {
                 "id": 1,
                 "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOAOrLMY-UXd_Yt7H_lTNNRd05b2fAR2STfn_dNz4XcWQZxTA04A",
@@ -176,7 +176,7 @@ No request header and request body
 Response body:-
 {
     "data": {
-        "banners": [
+        "Obituaries": [
             {
                 "id": 1,
                 "url": "https://toppng.com/public/uploads/preview/old-man-smiling-11549878759tjvbnenohy.png",
@@ -270,7 +270,6 @@ Response body:-
         ]
     }
 }
-
 
 Endpoint 4
 ---------------------------------------------------------
