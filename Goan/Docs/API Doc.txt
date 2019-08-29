@@ -877,17 +877,25 @@ Note: dob, dod are just strings. now it is like that in DB.
  It will be stored as string as such.
 
 
-Endpoint 16 - Subscriptions List
+Endpoint 16 Obituary Detailed View
+---------------------------------------------------------
+GET	http://innowity.com/uwtgoan/obituary-detailed-view.php?id=3
 
+//ID mandatory
+//empty req body
 
-Endpoint 17 - Booked obituary posts
+Response:-
 
-
-
-
-
-
-
+{
+    "data": {
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWH4VMzX_YiuMXuO-oLu_pu3TFeSn6gLwXe-LIznwf6OvvIiYeLg",
+        "Name": "Duncan Chrishold",
+        "Date of Birth": "1966-05-26",
+        "Date of Death": "2017-08-05",
+        "Message": "John Dalton, known to friends as \"Jack,\" passed away on September 4, 2014, at the age of 78 years.",
+        "Location": "Wellington"
+    }
+}
 
 
 
