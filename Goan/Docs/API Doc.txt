@@ -663,7 +663,7 @@ Response:-
 
 Endpoint 12 Contact Us - Query form
 ---------------------------------------------------------
-POST http://innowity.com/uwtgoan/tax.php
+POST http://innowity.com/uwtgoan/contact_us.php
 
 {
 	"name":"bala",
@@ -686,7 +686,7 @@ Response:-
 
 Endpoint 13 Update Profile
 ---------------------------------------------------------
-GET	http://innowity.com/uwtgoan/tax.php
+GET	http://innowity.com/uwtgoan/update-profile.php
 
 
 {
