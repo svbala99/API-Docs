@@ -350,9 +350,7 @@ Request body:-
 Response body:-
 {
     "data": {
-        "message": "Details stored and OTP sent successfully",
-        "user_id": 33,
-        "name": "bavani"
+        "message": "Details stored and OTP sent successfully"
     }
 }
 
@@ -382,7 +380,6 @@ POST 	http://innowity.com/uwtgoan/otp-verify.php
 
 Request body:-
 {
-	"user_id": "32",
 	"otp": "1234",
 	"cell": "9200920092"
 }
