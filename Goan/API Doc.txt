@@ -313,7 +313,7 @@ Response body:-
             "email": "svbala99@hotmail.com",
             "dob": "12 February, 1991",
             "gender": "male",
-            "dp_url": "https://i.pravatar.cc/300",
+            "dp_url": "innowity.com/uwtgoan/images/img_30082019_021013PM_uYIqOuoKln.jpg",
             "proof_type": 1,
             "proof_front_url": "https://dummyimage.com/300",
             "proof_back_url": "https://dummyimage.com/300",
@@ -374,7 +374,7 @@ If not new user, but trying to reset password:-
             "email": "svbala99@hotmail.com",
             "dob": "12 February, 1991",
             "gender": "male",
-            "dp_url": "https://i.pravatar.cc/300",
+            "dp_url": "innowity.com/uwtgoan/images/img_30082019_021013PM_uYIqOuoKln.jpg",
             "proof_type": "1",
             "proof_front_url": "https://dummyimage.com/300",
             "proof_back_url": "https://dummyimage.com/300",
@@ -406,7 +406,7 @@ If new user:-
 
 Endpoint 8
 ---------------------------------------------------------
-PATCH 	http://innowity.com/uwtgoan/upload-proof.php
+POST 	http://innowity.com/uwtgoan/upload-proof.php
 // all params mandatory. If user wishes not to change dp_url, give old dp_url
 //If you give dp_url=''   then empty string will be updated. Kindly take care here.
 
@@ -414,9 +414,9 @@ Request body:-
 {
 	"user_id": "33",
 	"proof_type": "1",
-	"proof_front_url": "https://dummyimage.com/500",
-	"proof_back_url": "https://dummyimage.com/300",
-	"dp_url": "https://i.pravatar.cc/300"
+    "proof_front_url": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAA,
+    "proof_back_url": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAA,
+	"dp_url": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAA
 }
 
 
@@ -501,7 +501,7 @@ Request body:-
 {
 	"user_id": "33",
 	"type": "3",
-	"image_url":"https:adssdasdasd",
+	"image_url":"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAA,
 	"name": "bala",
 	"addr":"asdasjd",
 	"dob":"12 February, 1991",
@@ -612,18 +612,18 @@ Response:-
 
 Endpoint 13 Update Profile
 ---------------------------------------------------------
-PATCH	http://innowity.com/uwtgoan/update-profile.php
-//cell validated
+POST	http://innowity.com/uwtgoan/update-profile.php
+//cell  and user_id validated
 
 {
-	"user_id" : "33",
-	"name": "john cena",
+	"user_id":"33",
+	"name":"Balamurugan",
 	"cell":"9600297967",
-	"email": "svbala99@hotmail.com",
+	"email":"svbala99@gmail.com",
 	"dob":"12 February, 1991",
-	"gender": "male",
+	"gender":"Male",
 	"fcm_id":"abc123",
-	"dp_url":"https://aasdasdasd.com"
+	"dp_url":"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAasdasdjasdasdasdiasjdj
 }
 
 //All params mandatory
