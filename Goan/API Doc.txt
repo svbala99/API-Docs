@@ -293,11 +293,12 @@ Response body:-
 Endpoint 5
 -------------------------------------------------------------
 POST 	http://innowity.com/uwtgoan/login.php
+// cell and password validated
 
 Request body:-
 {
 	"cell": "9600297967",
-	"password": "123456"
+	"password": "Uniq@123"
 }
 Response body:-
 {
@@ -305,47 +306,40 @@ Response body:-
         "message": "Login Successful",
         "userDetails": {
             "user_id": 33,
-            "password": "123456",
+            "password": "Uniq@123",
             "cell": "9600297967",
             "fcm_id": "abc123",
             "name": "john cena",
             "email": "svbala99@hotmail.com",
             "dob": "12 February, 1991",
             "gender": "male",
-            "dp_url": "https://aasdasdasd.com",
-            "proof_type": "1",
-            "proof_front_url": "httpss",
-            "proof_back_url": "httpss back side URL",
-            "Account Created": "27 August, 2019 13:44:27",
-            "Last updated": "29 August,2019 11:27:10"
+            "dp_url": "https://i.pravatar.cc/300",
+            "proof_type": 1,
+            "proof_front_url": "https://dummyimage.com/300",
+            "proof_back_url": "https://dummyimage.com/300",
+            "Account Created": "27 August, 2019 01:44:27 PM",
+            "Last updated": "29 August,2019 11:56:44 PM"
         }
     }
 }
-Mobile number or password not set, or invalid input
-{
-    "error": {
-        "code": 401,
-        "message": "Unauthorized"
-    }
-}
-
 
 
 Endpoint 6
 -----------------------------------------------------------------
 POST 	http://innowity.com/uwtgoan/register.php
+//all fields mandatory
+//cell, password validated
 
 Request body:-
 {
 	"name": "bavani",
 	"cell": "920092002",
 	"email": "bavani@gmail.com",
-	"password": "123456",
-	"dob":"01-Jan-1991",
+	"password": "Uniq@123",
+	"dob":"01 January, 1991",
 	"gender":"female",
 	"fcm_id": "abc123"
 }
-
 
 Response body:-
 {
@@ -354,80 +348,75 @@ Response body:-
     }
 }
 
-Account already exists
-{
-    "error": {
-        "code": 400,
-        "message": "Account already exists"
-    }
-}
-
-
-
-If any param is missing in request body
-{
-    "error": {
-        "code": 401,
-        "message": "Unauthorized"
-    }
-}
-
-
-
 Endpoint 7
 ---------------------------------------------------------
 POST 	http://innowity.com/uwtgoan/otp-verify.php
 
+//all params validated
+
 Request body:-
 {
 	"otp": "1234",
-	"cell": "9200920092"
+	"cell": "9578879420"
 }
 
 Response Body:-
+
+If not new user, but trying to reset password:-
 {
     "data": {
         "userDetails": {
-            "user_id": 32,
-            "password": "123456",
-            "cell": "9200920092",
+            "user_id": 33,
+            "password": "Uniq@123",
+            "cell": "9600297967",
+            "fcm_id": "abc123",
+            "name": "john cena",
+            "email": "svbala99@hotmail.com",
+            "dob": "12 February, 1991",
+            "gender": "male",
+            "dp_url": "https://i.pravatar.cc/300",
+            "proof_type": "1",
+            "proof_front_url": "https://dummyimage.com/300",
+            "proof_back_url": "https://dummyimage.com/300",
+            "created_on": "27 August, 2019"
+        }
+    }
+}
+
+If new user:-
+{
+    "data": {
+        "userDetails": {
+            "user_id": 39,
+            "password": "Uniq@123",
+            "cell": "9578879420",
             "fcm_id": "abc123",
             "name": "bavani",
             "email": "bavani@gmail.com",
-            "dob": "01-Jan-1991",
+            "dob": "01 January, 1991",
             "gender": "female",
             "dp_url": null,
             "proof_type": null,
             "proof_front_url": null,
             "proof_back_url": null,
-            "created_on": "2019-08-27 13:54:06"
+            "created_on": "29 August, 2019"
         }
     }
 }
 
-
-
-
-If OTP expired or OTP used already
-{
-    "error": {
-        "code": 400,
-        "message": "OTP expired! Try Register again"
-    }
-}
-
-
 Endpoint 8
 ---------------------------------------------------------
-POST 	http://innowity.com/uwtgoan/upload-proof.php
+PATCH 	http://innowity.com/uwtgoan/upload-proof.php
+// all params mandatory. If user wishes not to change dp_url, give old dp_url
+//If you give dp_url=''   then empty string will be updated. Kindly take care here.
 
 Request body:-
 {
 	"user_id": "33",
 	"proof_type": "1",
-	"proof_front_url": "httpss",
-	"proof_back_url": "httpss back side URL",
-	"dp_url": "dp url is this"
+	"proof_front_url": "https://dummyimage.com/500",
+	"proof_back_url": "https://dummyimage.com/300",
+	"dp_url": "https://i.pravatar.cc/300"
 }
 
 
@@ -444,12 +433,13 @@ Response:-
 Endpoint 9.1 // Add Type 1 - Buy Subscription
 ---------------------------------------------------------
 POST 	http://innowity.com/uwtgoan/cart-add.php
+//all params mandatory
 
 Request body:-
 {
 	"user_id": "33",
 	"type": "1",
-	"end_date": "30-08-2019",
+	"end_date": "30 August, 2019",
 	"t1_abroad_addr": "address abroad is this",
 	"t1_indian_addr": "indian address something",
 	"contact_name": "bala",
@@ -466,17 +456,15 @@ Response:-
 {
     "data": {
         "message": "Item added to cart successfully",
-        "cart_items": 2,
-        "new_cart_item_id": 82,
-        "new_item_added_on": "29-08-2019 11:13:19",
-        "old_cart_item_id": 72,
-        "old_item_added_on": "28-08-2019 17:59:57"
+        "cart_id": 87,
+        "added_on": "30 August,2019 02:14:18 AM"
     }
 }
 
 Endpoint 9.2 // Add Type 2 - Send Flowers
 ---------------------------------------------------------
 POST 	http://innowity.com/uwtgoan/cart-add.php
+//all params mandatory
 
 Request body:-
 {
@@ -487,7 +475,7 @@ Request body:-
 	"receiver_cell":"9600297967",
 	"receiver_addr":"asdasjd asdasidj asdjai",
 	"receiver_msg":"Getwel soon asdasdasdsda",
-	"end_date": "31-08-2019",
+	"end_date": "31 August,2019",
 	"item_description":"Flower for Birthday wishes",
 	"sub_total":"1000",
 	"tax":"50",
@@ -498,15 +486,16 @@ Response:-
 {
     "data": {
         "message": "Item added to cart successfully",
-        "cart_items": 1,
-        "cart_id": 83,
-        "added_on": "29-08-2019 11:14:38"
+        "cart_id": 88,
+        "added_on": "30 August,2019 02:15:33 AM"
     }
 }
 
 Endpoint 9.3 // Add Type 3 - Create Obituary Post
 ---------------------------------------------------------
 POST 	http://innowity.com/uwtgoan/cart-add.php
+
+//all params mandatory
 
 Request body:-
 {
@@ -515,10 +504,10 @@ Request body:-
 	"image_url":"https:adssdasdasd",
 	"name": "bala",
 	"addr":"asdasjd",
-	"dob":"20-06-1960",
-	"dod":"20-06-2018",
+	"dob":"12 February, 1991",
+	"dod":"11 November, 2001",
 	"msg":"Miss you dear father",
-	"end_date": "31-08-2019",
+	"end_date": "31 August, 2019",
 	"item_description":"Standard Obituary Post (2 days)",
 	"sub_total":"1000",
 	"tax":"50",
@@ -529,60 +518,10 @@ Response :-
 {
     "data": {
         "message": "Item added to cart successfully",
-        "cart_items": 2,
-        "new_cart_item_id": 84,
-        "new_item_added_on": "29-08-2019 11:15:30",
-        "old_cart_item_id": 83,
-        "old_item_added_on": "29-08-2019 11:14:38"
+        "cart_id": 90,
+        "added_on": "30 August,2019 02:20:50 AM"
     }
 }
-
-
-
-In all cart item adding:- (9.1, 9.2, 9.3)
----------------------------------
-If there is only 1 item already in cart:-
-
-{
-    "data": {
-        "message": "Item added to cart successfully",
-        "cart_items": 2,
-        "new_cart_item_id": 84,
-        "new_item_added_on": "29-08-2019 11:15:30",
-        "old_cart_item_id": 83,
-        "old_item_added_on": "29-08-2019 11:14:38"
-    }
-}
-
-
-If the cart is empty already:-
-{
-    "data": {
-        "message": "Item added to cart successfully",
-        "cart_items": 1,
-        "cart_id": 83,
-        "added_on": "29-08-2019 11:14:38"
-    }
-}
-
-Note:-
---------------
-If there are more than 1 item in cart already (2 items in cart):-
-All the two items will be deleted and this newly added item will be stored to cart.
-You can check no. of items in cart in Response.
-New API is under processing: view cart and delete cart item (if there is more than 1 cart item)
-In 9.1, 9.2, 9.3, all input params are mandatory.
-
-
-{
-    "data": {
-        "message": "Item added to cart successfully",
-        "cart_items": 1,
-        "cart_id": 83,
-        "added_on": "29-08-2019 11:14:38"
-    }
-}
-
 
 
 Endpoint 10 Book
@@ -590,6 +529,7 @@ Endpoint 10 Book
 POST 	http://innowity.com/uwtgoan/book.php
 
 // all three params are mandatory
+//userid and cart id validated
 
 
 Request body:-
@@ -604,29 +544,10 @@ Response:-
     "data": {
         "message": "Booking done successfully",
         "user_id": 33,
-        "booking_id": 24,
-        "booked on": "29-08-2019 11:14:38"
+        "booking_id": 22,
+        "booked on": "30 August,2019 02:38:14 AM"
     }
 }
-
-
-
-If cart item not found:-
-{
-    "error": {
-        "code": 404,
-        "message": "Cart Item not found"
-    }
-}
-
-If user ID is wrong:-
-{
-    "error": {
-        "code": 400,
-        "message": "Unregistered or Mobile number unverified"
-    }
-}
-
 
 
 Endpoint 11 Tax
@@ -675,23 +596,21 @@ Response:-
 {
     "data": {
         "message": "Query submitted successfully",
-        "submitted_on": "29 August,2019 11:26:07"
+        "submitted_on": "30 August,2019 02:40:55 AM"
     }
 }
 
 
-
 Endpoint 13 Update Profile
 ---------------------------------------------------------
-GET	http://innowity.com/uwtgoan/update-profile.php
-
+PATCH	http://innowity.com/uwtgoan/update-profile.php
+//cell validated
 
 {
 	"user_id" : "33",
 	"name": "john cena",
 	"cell":"9600297967",
 	"email": "svbala99@hotmail.com",
-	"password":"123456",
 	"dob":"12 February, 1991",
 	"gender": "male",
 	"fcm_id":"abc123",
@@ -704,7 +623,7 @@ Response:-
 {
     "data": {
         "message": "Updated successfully",
-        "Updated_on": "29 August,2019 11:27:10"
+        "Updated_on": "30 August,2019 02:43:37 AM"
     }
 }
 
@@ -858,8 +777,8 @@ Response:-
         "Total": "Rs.1050",
         "Image URL": "https:adssdasdasd",
         "Name": "bala",
-        "Date of Birth": "20-06-1960",
-        "Date of Death": "2019-05-06",
+        "Date of Birth": "20 June, 1960",
+        "Date of Death": "01 January, 2018",
         "location": "asdasjd",
         "Description": "Standard Obituary Post (2 days)",
         "sub_total": "Rs.1000",
@@ -868,11 +787,6 @@ Response:-
         "tax": "Rs.50"
     }
 }
-
-Note: dob, dod are just strings. now it is like that in DB.
- from next time onwards when u create new obituary.post, give whatever format you want: 10 August, 2001  
- It will be stored as string as such.
-
 
 Endpoint 16 Obituary Detailed View
 ---------------------------------------------------------
@@ -887,8 +801,8 @@ Response:-
     "data": {
         "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWH4VMzX_YiuMXuO-oLu_pu3TFeSn6gLwXe-LIznwf6OvvIiYeLg",
         "Name": "Duncan Chrishold",
-        "Date of Birth": "1966-05-26",
-        "Date of Death": "2017-08-05",
+        "Date of Birth": "26 May, 1966",
+        "Date of Death": "05 August, 2017",
         "Message": "John Dalton, known to friends as \"Jack,\" passed away on September 4, 2014, at the age of 78 years.",
         "Location": "Wellington"
     }
@@ -910,35 +824,41 @@ Response:-
 }
 
 
-
-
-
-For all endpoints:-
--------------------------------------------------
-If irrelevant HTTP method passed
+Endpoint 18 Forgot password and send OTP
+---------------------------------------------------------
+POST http://innowity.com/uwtgoan/forgot-password.php
+//cell mandatory and validated
+Request:-
 {
-    "error": {
-        "code": 405,
-        "message": "This HTTP Method is Not Allowed"
+	"cell":"9600297967"
+}
+
+Response:-
+{
+    "data": {
+        "message": "OTP sent to registered Mobile number"
     }
 }
 
-If cell number is not starting from 6,7,8,9 or not 10 digits
+Endpoint 19 Reset New password
+---------------------------------------------------------
+PATCH http://innowity.com/uwtgoan/reset-password.php
+//userid and password validated. 
+//password must be atleast 8 chars, must have atleast 1 upper case, 1 number, 1 spl char
+//this password policy is for all APIs
+
+Request:-
 {
-    "error": {
-        "code": 400,
-        "message": "Phone number is invalid"
+	"user_id":"33",
+	"password":"Uniq@1234"
+}
+
+Response:-
+{
+    "data": {
+        "message": "Password Reset Successfully",
+        "Updated On": "30 August,2019 02:52:33 AM"
     }
 }
 
-If delivery date is in future in all APIs, it will be displayed like:-
-"Delivering on": "31 August, 2019"
-
-If delivery date is in past in all APIs, it will be displayed like:-
-Delivered on": "26 August, 2019"
-
-
-
-Note:-
-•	Kindly follow docs for the case sensitivity when passing params in query string
-
+******************************************************************************************************
