@@ -549,6 +549,15 @@ Response:-
     }
 }
 
+If already there is type 1 subscription active for that user:-
+{
+    "error": {
+        "code": 400,
+        "message": "Already there is an active subscription",
+        "subscription purchase Date": "29 August, 2019",
+        "subscription End Date": "30 August, 2019"
+    }
+}
 
 Endpoint 11 Tax
 ---------------------------------------------------------
