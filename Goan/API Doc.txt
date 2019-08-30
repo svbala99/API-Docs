@@ -326,7 +326,7 @@ Response body:-
 
 Endpoint 6
 -----------------------------------------------------------------
-POST 	http://innowity.com/uwtgoan/register.php
+POST 	http://innowity.com/uwtgoan/register1.php
 //all fields mandatory
 //cell, password validated
 
@@ -758,17 +758,19 @@ Response:-
 
 Endpoint 15 View Booked Item Details  15.2 (type 2 = send flowers)
 ---------------------------------------------------------
-GET	http://innowity.com/uwtgoan/view-booked-item.php?user_id=33&booking_id=18
+GET	http://innowity.com/uwtgoan/view-booked-item.php?user_id=33&booking_id=32
 
 Response:-
 {
     "data": {
-        "Booking ID": 18,
+        "Booking ID": 32,
         "Total": "Rs.1050",
         "Flower URL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0dfiApAWz3x5ExVU6b4hvADU6-WqIhd8tOHd_6w-yF1c9RqOt210",
         "Description": "Flower for Birthday wishes",
+        "Delivery Address": "typ2 rx address",
+        "Message": "Type 2 rx msg",
         "sub_total": "Rs.1000",
-        "Order Placed": "29 August, 2019",
+        "Order Placed": "30 August, 2019",
         "Delivering on": "31 August, 2019",
         "tax": "Rs.50"
     }
@@ -777,21 +779,22 @@ Response:-
 
 Endpoint 15 View Booked Item Details  15.3 (type 3 = Obituary post)
 ---------------------------------------------------------
-GET	http://innowity.com/uwtgoan/view-booked-item.php?user_id=33&booking_id=19
+GET	http://innowity.com/uwtgoan/view-booked-item.php?user_id=33&booking_id=33
 
 Response:-
 {
     "data": {
-        "Booking ID": 19,
+        "Booking ID": 33,
         "Total": "Rs.1050",
-        "Image URL": "https:adssdasdasd",
+        "Image URL": "localhost/goan/images/img_30082019_062742PM_TQzuKttFIr.jpg",
         "Name": "bala",
-        "Date of Birth": "20 June, 1960",
-        "Date of Death": "01 January, 2018",
+        "Date of Birth": "12 February, 1991",
+        "Date of Death": "11 November, 2019",
         "location": "asdasjd",
+        "message": "Miss you dear father",
         "Description": "Standard Obituary Post (2 days)",
         "sub_total": "Rs.1000",
-        "Post created": "29 August, 2019",
+        "Post created": "30 August, 2019",
         "Post Expiring on": "31 August, 2019",
         "tax": "Rs.50"
     }
