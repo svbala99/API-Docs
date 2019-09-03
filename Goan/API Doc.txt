@@ -627,7 +627,7 @@ Response:-
 
 Endpoint 11 Image Uploader
 ---------------------------------------------------------
-POST http://innowity.com/uwtgoan/reset-password.php
+POST http://innowity.com/uwtgoan/api/image_uploader.php
 //userid and image validated
 
 Request:-
