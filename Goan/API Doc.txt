@@ -446,7 +446,7 @@ Response body:-
 
 Endpoint 5
 -----------------------------------------------------------------
-POST 	http://innowity.com/uwtgoan/api/register.php
+POST 	http://innowity.com/uwtgoan/api/register1.php
 //all fields mandatory
 //cell, password validated
 
@@ -606,7 +606,7 @@ Response:-
 
 Endpoint 10 Reset New password
 ---------------------------------------------------------
-PATCH http://innowity.com/uwtgoan/reset-password.php
+PATCH 	https://innowity.com/uwtgoan/password_reset.php
 //userid and password validated. 
 //password must be atleast 8 chars, must have atleast 1 upper case, 1 number, 1 spl char
 //this password policy is for all APIs
@@ -627,7 +627,7 @@ Response:-
 
 Endpoint 11 Image Uploader
 ---------------------------------------------------------
-POST http://innowity.com/uwtgoan/api/image_uploader.php
+POST https://innowity.com/uwtgoan/api/image_uploader.php
 //userid and image validated
 
 Request:-
@@ -671,7 +671,7 @@ Response:-
 
 Endpoint 13 Profile Picture Update
 ---------------------------------------------------------
-POST	http://innowity.com/uwtgoan/api/dp_updater.php
+POST	https://innowity.com/uwtgoan/api/dp_updater.php
 
 //params validated
 
@@ -1033,7 +1033,7 @@ Response:-
 
 Endpoint 19 View one Booking
 ---------------------------------------------------------
-GET 	http://innowity.com/uwtgoan/api/booking.php?user_id=33&booking_id=36
+GET 	https://innowity.com/uwtgoan/api/booking.php?user_id=33&booking_id=36
 
 Response:-
 {
@@ -1054,7 +1054,7 @@ Response:-
 
 Endpoint 20 View Tariff
 ---------------------------------------------------------
-GET 	http://innowity.com/uwtgoan/goan/tariff.php
+GET 	https://innowity.com/uwtgoan/goan/tariff.php
 
 Response:-
 {
