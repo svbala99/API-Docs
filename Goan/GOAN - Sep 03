@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "e28ce605-e80e-4e64-a6be-ec07430f71bf",
-		"name": "GOAN - AUG 30",
+		"name": "GOAN - SEP 03",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
@@ -158,7 +158,7 @@
 					"mode": "raw",
 					"raw": "{\n\t\"name\": \"bavani\",\n\t\"cell\": \"9988776694\",\n\t\"email\": \"bavani@gmail.com\",\n\t\"password\": \"Uniq@123\",\n\t\"dob\":\"01 January, 1991\",\n\t\"gender\":\"female\",\n\t\"fcm_id\": \"abc123\"\n}"
 				},
-				"url": "http://innowity.com/uwtgoan/api/register.php"
+				"url": "https://innowity.com/uwtgoan/api/register1.php"
 			},
 			"response": []
 		},
@@ -605,7 +605,7 @@
 	],
 	"variable": [
 		{
-			"id": "bfa0a963-5aa6-4382-9a40-5b684cf38f4b",
+			"id": "40d00ffd-66c5-423c-b22c-759581ba3b3b",
 			"key": "env",
 			"value": "http://innowity.com/uwtgoan/api",
 			"type": "string"
