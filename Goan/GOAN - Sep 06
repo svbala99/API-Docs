@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "e28ce605-e80e-4e64-a6be-ec07430f71bf",
-		"name": "GOAN - SEP 03",
+		"name": "GOAN - SEP 06",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
@@ -30,7 +30,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{env}}/flowers.php?occasion=anniversary",
+					"raw": "{{env}}/flowers.php?occasion=1",
 					"host": [
 						"{{env}}"
 					],
@@ -40,7 +40,7 @@
 					"query": [
 						{
 							"key": "occasion",
-							"value": "anniversary"
+							"value": "1"
 						}
 					]
 				}
@@ -112,8 +112,8 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://innowity.com/uwtgoan/api/obituaries.php?id=1",
-					"protocol": "http",
+					"raw": "https://innowity.com/uwtgoan/api/obituaries.php?booking_id=10",
+					"protocol": "https",
 					"host": [
 						"innowity",
 						"com"
@@ -125,8 +125,8 @@
 					],
 					"query": [
 						{
-							"key": "id",
-							"value": "1"
+							"key": "booking_id",
+							"value": "10"
 						}
 					]
 				}
@@ -267,9 +267,9 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"user_id\":\"33\",\n\t\"password\":\"Uniq@1234\"\n}"
+					"raw": "{\n\t\"user_id\":\"33\",\n\t\"password\":\"Uniq@12345\"\n}"
 				},
-				"url": "http://innowity.com/uwtgoan/password_reset.php"
+				"url": "http://innowity.com/uwtgoan/api/password_reset.php"
 			},
 			"response": []
 		},
@@ -395,7 +395,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"user_id\": \"33\",\n\t\"type\": \"3\",\n\t\"image_url\":\"https://asdadasd.com\",\n\t\"name\": \"bala\",\n\t\"addr\":\"asdasjd\",\n\t\"dob\":\"12 February, 1991\",\n\t\"dod\":\"11 November, 2001\",\n\t\"msg\":\"Miss you dear father\",\n\t\"end_date\": \"31 September, 2019\"\n}"
+					"raw": "{\n\t\"user_id\": \"33\",\n\t\"type\": \"3\",\n\t\"image_url\":\"https://innowity.com/uwtgoan/api/images/img_06092019_052309PM_hmVaFZsBZa.jpg\",\n\t\"name\": \"bala\",\n\t\"addr\":\"asdasjd\",\n\t\"dob\":\"12 February, 1991\",\n\t\"dod\":\"11 November, 2001\",\n\t\"msg\":\"Miss you dear father\",\n\t\"end_date\": \"31 September, 2019\",\n\t\"funeral_description\": \"This Funeral Happened at No:123, 4th street, Alwarpet. Final Proceedings at St. Thomas Basilica Church Santhome, Chennai at 06-30PM. Maay his soul Rest in Peace.\",\n\t                \"contact_name\": \"Balamurugan\",\n                \"contact_cell\": \"9600297967\",\n                \"contact_addr\": \"52/33, Jayabalan Street, Vasudevan Nagar, Ashok Nagar, CHennai 600083, Tamilnadu\"\n}"
 				},
 				"url": "{{env}}/cart_add.php"
 			},
@@ -452,7 +452,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"user_id\": \"33\",\n\t\"cart_id\": \"130\",\n\t\"razor_id\": \"abc1234\"\n} "
+					"raw": "{\n\t\"user_id\": \"33\",\n\t\"cart_id\": \"251\",\n\t\"razor_id\": \"abc1234\"\n} "
 				},
 				"url": "https://innowity.com/uwtgoan/api/book.php",
 				"description": "asjd;asjdas dj;asdasdasjd"
@@ -506,11 +506,15 @@
 					}
 				],
 				"url": {
-					"raw": "{{env}}/booking.php?user_id=33&booking_id=34",
+					"raw": "https://innowity.com/uwtgoan/api/booking.php?user_id=33&booking_id=41",
+					"protocol": "https",
 					"host": [
-						"{{env}}"
+						"innowity",
+						"com"
 					],
 					"path": [
+						"uwtgoan",
+						"api",
 						"booking.php"
 					],
 					"query": [
@@ -520,7 +524,7 @@
 						},
 						{
 							"key": "booking_id",
-							"value": "34"
+							"value": "41"
 						}
 					]
 				}
@@ -605,7 +609,7 @@
 	],
 	"variable": [
 		{
-			"id": "40d00ffd-66c5-423c-b22c-759581ba3b3b",
+			"id": "550f589b-3415-4b81-b7e6-0468005d187b",
 			"key": "env",
 			"value": "http://innowity.com/uwtgoan/api",
 			"type": "string"
