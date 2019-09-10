@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "dc20d508-490e-4596-b01b-d5792c275f24",
-		"name": "Greentrends Sep 03",
+		"name": "Greentrends Sep 10",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
@@ -19,7 +19,8 @@
 					"mode": "raw",
 					"raw": "{\n    \"cell\": \"9100910091\"\n}"
 				},
-				"url": "http://innowity.com/greentrends/api/otp-send.php"
+				"url": "{{env}}otp-send.php",
+				"description": "Cell Number validated"
 			},
 			"response": [
 				{
@@ -146,7 +147,8 @@
 					"mode": "raw",
 					"raw": "{\n    \"otp\": \"1234\",\n    \"cell\": \"9100910091\",\n\t\"salon_id\":\"1\",\n    \"fcmID\": \"4asdgas45a6sd\"\n}"
 				},
-				"url": "http://innowity.com/greentrends/api/otp-verify.php"
+				"url": "{{env}}otp-verify.php",
+				"description": "If new user\n--------------------\nisNewUser: true\n\nIf existing user\n------------------------\nUser details\n\nOTP incorrect\n-----------\n401 error"
 			},
 			"response": [
 				{
@@ -221,9 +223,10 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"userDetails\": {\n        \"name\": \"santhosh\",\n        \"cell\": \"9300930093\",\n        \"gender\": \"male\",\n        \"email\": \"anniyan@GMAIL.COM\",\n        \"dp_url\": \"this is DP url\"\n    }\n}"
+					"raw": "{\n    \"userDetails\": {\n        \"name\": \"santhosh\",\n        \"cell\": \"9300930093\",\n        \"gender\": \"male\",\n        \"email\": \"anniyan@GMAIL.COM\"\n    }\n}"
 				},
-				"url": "http://innowity.com/greentrends/api/update-profile.php"
+				"url": "{{env}}update-profile.php",
+				"description": "Params validated"
 			},
 			"response": [
 				{
@@ -298,16 +301,10 @@
 					}
 				],
 				"url": {
-					"raw": "http://innowity.com/greentrends/api/services.php?gender=male&combo=yes",
-					"protocol": "http",
+					"raw": "{{env}}services.php?gender=male&combo=yes",
 					"host": [
-						"innowity",
-						"com"
-					],
-					"path": [
-						"greentrends",
-						"api",
-						"services.php"
+						"{{env}}services",
+						"php"
 					],
 					"query": [
 						{
@@ -319,7 +316,8 @@
 							"value": "yes"
 						}
 					]
-				}
+				},
+				"description": "gender=male&combo=yes\ngender=male&combo=no\ngender=female&combo=yes\ngender=female&combo=no"
 			},
 			"response": []
 		},
@@ -333,7 +331,8 @@
 						"value": "asdasdasdasdasdasd"
 					}
 				],
-				"url": "http://innowity.com/greentrends/api/referrals.php"
+				"url": "{{env}}referrals.php",
+				"description": "auth token validated"
 			},
 			"response": []
 		},
@@ -351,7 +350,8 @@
 					"mode": "raw",
 					"raw": "{\r\n    \"service_id\":6\r\n}"
 				},
-				"url": "http://innowity.com/greentrends/api/add-cart-item.php"
+				"url": "{{env}}add-cart-item.php",
+				"description": "params and token validated"
 			},
 			"response": []
 		},
@@ -362,14 +362,15 @@
 				"header": [
 					{
 						"key": "x-auth-token",
-						"value": "a29d28b52aeb61e5872c6700ce68bf43"
+						"value": "664dbdd686f502afbe4b4a719004fa27"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"service_id\":4\r\n}"
+					"raw": "{\r\n    \"service_id\":6\r\n}"
 				},
-				"url": "http://innowity.com/greentrends/api/delete-cart-item.php"
+				"url": "{{env}}delete-cart-item.php",
+				"description": "params and token validated"
 			},
 			"response": []
 		},
@@ -389,24 +390,19 @@
 					}
 				],
 				"url": {
-					"raw": "http://innowity.com/greentrends/api/view-bookings.php?status=1",
-					"protocol": "http",
+					"raw": "{{env}}view-bookings.php?status=3",
 					"host": [
-						"innowity",
-						"com"
-					],
-					"path": [
-						"greentrends",
-						"api",
-						"view-bookings.php"
+						"{{env}}view-bookings",
+						"php"
 					],
 					"query": [
 						{
 							"key": "status",
-							"value": "1"
+							"value": "3"
 						}
 					]
-				}
+				},
+				"description": "?status=1 (user requested booking)\n?status=2 (admin approved normal booking)\n?status=3 (user requested reschedule)\n?status=4 (admin approved reschedule)\n?status=5 (booking completed by admin dashboard)\n?status=6 (cancelled by admin or user)"
 			},
 			"response": []
 		},
@@ -425,7 +421,8 @@
 						"disabled": true
 					}
 				],
-				"url": "http://innowity.com/greentrends/api/view-cart.php"
+				"url": "{{env}}view-cart.php",
+				"description": "token validated"
 			},
 			"response": []
 		},
@@ -442,13 +439,20 @@
 						"key": "",
 						"value": "",
 						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"date\": \"27-Aug-2019\",\r\n  \"time\" : \"04:00AM\",\r\n  \"notes\": \"six thirty time notes\"\r\n}"
+					"raw": "{\r\n  \"date\": \"30-Sep-2019\",\r\n  \"time\" : \"04:00PM\",\r\n  \"gender\": \"male\"\r\n}"
 				},
-				"url": "http://innowity.com/greentrends/api/book.php"
+				"url": "{{env}}book.php",
+				"description": "Kindly supply correct time slot, because, there is no validation done for time slot in BE.\n\nparams validated"
 			},
 			"response": []
 		},
@@ -465,13 +469,20 @@
 						"key": "",
 						"value": "",
 						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"booking_id\" : 150,\r\n  \"date\": \"31-Aug-2019\",\r\n  \"time\" : \"10:00AM\",\r\n  \"notes\": \"new comment is this beacuse something bla bla\"\r\n}"
+					"raw": "{\r\n  \"booking_id\" : 189,\r\n  \"date\": \"30-Sep-2019\",\r\n  \"time\" : \"10:00AM\",\r\n  \"gender\":\"male\",\r\n  \"notes\": \"new comment is this beacuse something bla bla\"\r\n}"
 				},
-				"url": "http://innowity.com/greentrends/api/reschedule.php"
+				"url": "{{env}}reschedule.php",
+				"description": "Supply all details valid\n\nmax only once user can reschedule"
 			},
 			"response": []
 		},
@@ -482,7 +493,7 @@
 				"header": [
 					{
 						"key": "x-auth-token",
-						"value": "a29d28b52aeb61e5872c6700ce68bf43"
+						"value": "664dbdd686f502afbe4b4a719004fa27"
 					},
 					{
 						"key": "",
@@ -492,9 +503,10 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"booking_id\" : 143,\r\n  \"notes\": \"cancelled because of time schedule\"\r\n}"
+					"raw": "{\r\n  \"booking_id\" : 189,\r\n  \"notes\": \"cancelled because of time schedule\"\r\n}"
 				},
-				"url": "http://innowity.com/greentrends/api/cancel.php"
+				"url": "{{env}}cancel.php",
+				"description": "params validated"
 			},
 			"response": []
 		},
@@ -505,7 +517,7 @@
 				"header": [
 					{
 						"key": "x-auth-token",
-						"value": "a29d28b52aeb61e5872c6700ce68bf43"
+						"value": "664dbdd686f502afbe4b4a719004fa27"
 					},
 					{
 						"key": "",
@@ -514,24 +526,19 @@
 					}
 				],
 				"url": {
-					"raw": "http://innowity.com/greentrends/api/booking-id-details.php?booking_id=146",
-					"protocol": "http",
+					"raw": "{{env}}booking-id-details.php?booking_id=189",
 					"host": [
-						"innowity",
-						"com"
-					],
-					"path": [
-						"greentrends",
-						"api",
-						"booking-id-details.php"
+						"{{env}}booking-id-details",
+						"php"
 					],
 					"query": [
 						{
 							"key": "booking_id",
-							"value": "146"
+							"value": "189"
 						}
 					]
-				}
+				},
+				"description": "params validated"
 			},
 			"response": []
 		},
@@ -550,7 +557,8 @@
 						"disabled": true
 					}
 				],
-				"url": "http://innowity.com/greentrends/api/combo-names.php"
+				"url": "{{env}}combo-names.php",
+				"description": "Public API"
 			},
 			"response": []
 		},
@@ -561,7 +569,7 @@
 				"header": [
 					{
 						"key": "x-auth-token",
-						"value": "a29d28b52aeb61e5872c6700ce68bf43"
+						"value": "664dbdd686f502afbe4b4a719004fa27"
 					},
 					{
 						"key": "",
@@ -571,9 +579,10 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"booking_id\" : 149,\r\n  \"razor_id\": 123456\r\n}"
+					"raw": "{\r\n  \"booking_id\" : 188,\r\n  \"razor_id\": 123456\r\n}"
 				},
-				"url": "http://innowity.com/greentrends/api/razor.php"
+				"url": "{{env}}razor.php",
+				"description": "params validated, no check done on Razor Pay wallet"
 			},
 			"response": []
 		},
@@ -584,19 +593,26 @@
 				"header": [
 					{
 						"key": "x-auth-token",
-						"value": "a29d28b52aeb61e5872c6700ce68bf43"
+						"value": "664dbdd686f502afbe4b4a719004fa27"
 					},
 					{
 						"key": "",
 						"value": "",
 						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"booking_id\" : 149,\r\n  \"feedback\": \"nice service rendered\"\r\n}"
+					"raw": "{\r\n  \"booking_id\" : 188,\r\n  \"feedback\": \"nice service rendered\"\r\n}"
 				},
-				"url": "http://innowity.com/greentrends/api/feedback.php"
+				"url": "{{env}}feedback.php",
+				"description": "params validated"
 			},
 			"response": []
 		},
@@ -607,7 +623,7 @@
 				"header": [
 					{
 						"key": "x-auth-token",
-						"value": "a29d28b52aeb61e5872c6700ce68bf43"
+						"value": "664dbdd686f502afbe4b4a719004fa27"
 					},
 					{
 						"key": "",
@@ -615,7 +631,8 @@
 						"disabled": true
 					}
 				],
-				"url": "http://innowity.com/greentrends/api/banners.php"
+				"url": "{{env}}banners.php",
+				"description": "token validated"
 			},
 			"response": []
 		},
@@ -635,26 +652,51 @@
 					}
 				],
 				"url": {
-					"raw": "http://innowity.com/greentrends/api/slots.php?date=20-Aug-2019",
-					"protocol": "http",
+					"raw": "{{env}}slots.php?date=01-Oct-2019",
 					"host": [
-						"innowity",
-						"com"
-					],
-					"path": [
-						"greentrends",
-						"api",
-						"slots.php"
+						"{{env}}slots",
+						"php"
 					],
 					"query": [
 						{
 							"key": "date",
-							"value": "20-Aug-2019"
+							"value": "01-Oct-2019"
 						}
 					]
-				}
+				},
+				"description": "token validated.\nDate validated."
 			},
 			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "a31e9f78-4cb1-4174-a75e-853475dbc101",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "902c55ef-a5de-4673-97ea-1e4fb11a070a",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "13dbee39-5a23-48fc-a3e1-34af76c72391",
+			"key": "env",
+			"value": "http://innowity.com/greentrends/api/",
+			"type": "string"
 		}
 	]
 }
