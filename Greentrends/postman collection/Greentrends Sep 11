@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "dc20d508-490e-4596-b01b-d5792c275f24",
-		"name": "Greentrends Sep 10",
+		"name": "Greentrends Sep 11",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
@@ -218,12 +218,12 @@
 					},
 					{
 						"key": "x-auth-token",
-						"value": "664dbdd686f502afbe4b4a719004fa27"
+						"value": "a9117e78f55ecdab7931840e3fe50759"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"userDetails\": {\n        \"name\": \"santhosh\",\n        \"cell\": \"9300930093\",\n        \"gender\": \"male\",\n        \"email\": \"anniyan@GMAIL.COM\"\n    }\n}"
+					"raw": "{\n    \"userDetails\": {\n        \"name\": \"santhosh\",\n        \"cell\": \"9600950094\",\n        \"gender\": \"male\",\n        \"email\": \"anniyan@GMAIL.COM\",\n        \"referral_code\":\"2fc11a59fd\"\n    }\n}"
 				},
 				"url": "{{env}}update-profile.php",
 				"description": "Params validated"
@@ -328,7 +328,7 @@
 				"header": [
 					{
 						"key": "x-auth-token",
-						"value": "asdasdasdasdasdasd"
+						"value": "5b9c1841b51f66396350e7b4318cb946"
 					}
 				],
 				"url": "{{env}}referrals.php",
@@ -343,7 +343,7 @@
 				"header": [
 					{
 						"key": "x-auth-token",
-						"value": "664dbdd686f502afbe4b4a719004fa27"
+						"value": "a9117e78f55ecdab7931840e3fe50759"
 					}
 				],
 				"body": {
@@ -390,7 +390,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{env}}view-bookings.php?status=3",
+					"raw": "{{env}}view-bookings.php?status=4",
 					"host": [
 						"{{env}}view-bookings",
 						"php"
@@ -398,7 +398,7 @@
 					"query": [
 						{
 							"key": "status",
-							"value": "3"
+							"value": "4"
 						}
 					]
 				},
@@ -569,7 +569,7 @@
 				"header": [
 					{
 						"key": "x-auth-token",
-						"value": "664dbdd686f502afbe4b4a719004fa27"
+						"value": "a9117e78f55ecdab7931840e3fe50759"
 					},
 					{
 						"key": "",
@@ -579,7 +579,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"booking_id\" : 188,\r\n  \"razor_id\": 123456\r\n}"
+					"raw": "{\r\n  \"booking_id\" : 208,\r\n  \"razor_id\": 123456\r\n}"
 				},
 				"url": "{{env}}razor.php",
 				"description": "params validated, no check done on Razor Pay wallet"
@@ -693,7 +693,7 @@
 	],
 	"variable": [
 		{
-			"id": "13dbee39-5a23-48fc-a3e1-34af76c72391",
+			"id": "d569bf20-ba47-49e7-83ba-d206904e6e55",
 			"key": "env",
 			"value": "http://innowity.com/greentrends/api/",
 			"type": "string"
