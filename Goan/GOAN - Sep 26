@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "e28ce605-e80e-4e64-a6be-ec07430f71bf",
-		"name": "GOAN - SEP 10",
+		"name": "GOAN - SEP 26",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
@@ -307,7 +307,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"user_id\":\"33\",\n\t\"name\":\"Balamurugan\",\n\t\"cell\":\"9600297967\",\n\t\"email\":\"svbala99@gmail.com\",\n\t\"dob\":\"12 February, 1991\",\n\t\"gender\":\"Male\",\n\t\"fcm_id\":\"abc123\",\n\t\"dp_url\":\"https://innowity.com/uwtgoan/images/dp.jpg\"\n}"
+					"raw": "{\n\t\"user_id\":\"33\",\n\t\"name\":\"Balamurugan\",\n\t\"cell\":\"9600297967\",\n\t\"email\":\"svbala99@gmail.com\",\n\t\"dob\":\"12 February, 1991\",\n\t\"gender\":\"male\",\n\t\"fcm_id\":\"abc123\",\n\t\"dp_url\":\"https://innowity.com/uwtgoan/images/dp.jpg\"\n}"
 				},
 				"url": "{{env}}/profile_updater.php",
 				"description": "Params mandated"
@@ -326,7 +326,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"user_id\":33,\n\t\"dp_url\":\"http://innowity.com/uwtgoan/images/img_01092019_092143PM_rHhAtbzcAO.jpg\"\n}"
+					"raw": "{\n\t\"user_id\":33,\n\t\"dp_url\":\"https://innowity.com/uwtgoan/images/dp.jpg\"\n}"
 				},
 				"url": "{{env}}/dp_updater.php",
 				"description": "params mandated"
@@ -383,7 +383,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"user_id\": \"33\",\n\t\"type\": \"2\",\n\t\"type2_id\": \"12\",\n\t\"receiver_name\": \"bala\",\n\t\"receiver_cell\":\"9600297967\",\n\t\"receiver_addr\":\"asdasjd asdasidj asdjai\",\n\t\"receiver_msg\":\"Getwel soon asdasdasdsda\",\n\t\"end_date\": \"31 September, 2019\"\n}"
+					"raw": "{\n\t\"user_id\": \"33\",\n\t\"type\": \"2\",\n\t\"type2_id\": \"12\",\n\t\"receiver_name\": \"bala\",\n\t\"receiver_cell\":\"9600297967\",\n\t\"receiver_addr\":\"asdasjd asdasidj asdjai\",\n\t\"receiver_msg\":\"Getwel soon asdasdasdsda\",\n\t\"delivery_date\": \"31 September, 2019\"\n}"
 				},
 				"url": "{{env}}/cart_add.php",
 				"description": "params validated\n\n\nIf type2_id is invalid\n-------------------------------------\n\"message\" => \"Flower not available\"\n\nIf delivery_date is not supplied\n------------------------\n\"message\" => \"Delivery date is mandatory\"\n\nIf delivery_date is past\n------------------------\n\"message\" => \"Delivery date is past.\"\n\n\nIf delivery_date is Today\n------------------------\n\"message\" => \"Flowers cannot be delivered today. Kindly enter a later date..\"\n\n\n"
@@ -508,7 +508,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{env}}/booking.php?user_id=33&booking_id=41",
+					"raw": "{{env}}/booking.php?user_id=33&booking_id=68",
 					"host": [
 						"{{env}}"
 					],
@@ -522,7 +522,7 @@
 						},
 						{
 							"key": "booking_id",
-							"value": "41"
+							"value": "68"
 						}
 					]
 				},
@@ -584,6 +584,39 @@
 				"description": "empty req header and body"
 			},
 			"response": []
+		},
+		{
+			"name": "23. Image Uploader New",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "userFile",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "image_file",
+							"type": "file",
+							"src": "/C:/Users/Uniq Web Tech/Desktop/Capture.JPG"
+						}
+					]
+				},
+				"url": "{{env}}/image_uploader_v2.php",
+				"description": "Have a look at header and body in request"
+			},
+			"response": []
 		}
 	],
 	"event": [
@@ -610,10 +643,11 @@
 	],
 	"variable": [
 		{
-			"id": "7c3fa14d-04f3-4e2a-a974-d664a3459c5c",
+			"id": "9dde7789-214d-42b5-ac48-052cad85785d",
 			"key": "env",
 			"value": "https://innowity.com/uwtgoan/api",
 			"type": "string"
 		}
-	]
+	],
+	"protocolProfileBehavior": {}
 }
