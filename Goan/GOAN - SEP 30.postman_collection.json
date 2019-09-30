@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "e28ce605-e80e-4e64-a6be-ec07430f71bf",
-		"name": "GOAN - SEP 26",
+		"name": "GOAN - SEP 30",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
@@ -51,11 +51,30 @@
 		},
 		{
 			"name": "3.1  Obituaries List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": "{{env}}/obituaries.php",
-				"description": "No request header and request body\n\nResult sorted by Latest Post first"
+				"description": "No request header and request body\n\nResult sorted by Latest Post first\n\nIf you give /obituaries.php?user_id=33\n===================================\n\"liked\": \"yes\" OR \"liked\": \"no\" will be response depends on whether he liked or not\n\nIf you give /obituaries.php\n===================================\n\"liked\": \"no\" will be response"
 			},
 			"response": []
 		},
@@ -89,7 +108,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{env}}/obituaries.php?q=bala",
+					"raw": "{{env}}/obituaries.php?q=Da&user_id=33",
 					"host": [
 						"{{env}}"
 					],
@@ -99,11 +118,15 @@
 					"query": [
 						{
 							"key": "q",
-							"value": "bala"
+							"value": "Da"
+						},
+						{
+							"key": "user_id",
+							"value": "33"
 						}
 					]
 				},
-				"description": "No req header or body needed\n\nreturns results with name starting with 'ba'\nresult is sorted by \"latest post first\""
+				"description": "No req header or body needed\n\nreturns results with name starting with 'ba'\nresult is sorted by \"latest post first\"\n\nNo request header and request body\n\nResult sorted by Latest Post first\n\n\nIf you give /obituaries.php?q=Da&user_id=33\n===================================\n\"liked\": \"yes\" OR \"liked\": \"no\" will be response depends on whether he liked or not\n\nIf you give /obituaries.php?q=Da\n===================================\n\"liked\": \"no\" will be response"
 			},
 			"response": []
 		},
@@ -113,7 +136,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{env}}/obituaries.php?id=26",
+					"raw": "{{env}}/obituaries.php?id=26&user_id=33",
 					"host": [
 						"{{env}}"
 					],
@@ -124,10 +147,14 @@
 						{
 							"key": "id",
 							"value": "26"
+						},
+						{
+							"key": "user_id",
+							"value": "33"
 						}
 					]
 				},
-				"description": "No req body or header needed.\n\n\n"
+				"description": "No req body or header needed.\n\n\nIf you give /obituaries.php?id=26&user_id=33\n===================================\n\"liked\": \"yes\" OR \"liked\": \"no\" will be response depends on whether he liked or not\n\nIf you give /obituaries.php?id=26\n===================================\n\"liked\": \"no\" will be response"
 			},
 			"response": []
 		},
@@ -617,6 +644,32 @@
 				"description": "Have a look at header and body in request"
 			},
 			"response": []
+		},
+		{
+			"name": "24. Like obituary",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user_id\":33,\n\t\"obituary_id\":26,\n\t\"like\":\"no\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{env}}/like.php",
+				"description": "All params are mandatory and validated\n\nLike/Unlike function will occur\n\nIf you give \"like\":\"yes\"\n==========================\npost will be liked\n\nIf you give \"like\":\"no\"\n==========================\npost will be unliked"
+			},
+			"response": []
 		}
 	],
 	"event": [
@@ -643,7 +696,7 @@
 	],
 	"variable": [
 		{
-			"id": "9dde7789-214d-42b5-ac48-052cad85785d",
+			"id": "09d09115-15e0-4cd1-9fe2-e5ccd7faa737",
 			"key": "env",
 			"value": "https://innowity.com/uwtgoan/api",
 			"type": "string"
