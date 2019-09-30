@@ -429,7 +429,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"user_id\": \"33\",\n\t\"type\": \"3\",\n\t\"image_url\":\"https://innowity.com/uwtgoan/api/images/img_06092019_052309PM_hmVaFZsBZa.jpg\",\n\t\"name\": \"bala\",\n\t\"addr\":\"asdasjd\",\n\t\"dob\":\"12 February, 1991\",\n\t\"dod\":\"11 November, 2001\",\n\t\"msg\":\"Miss you dear father\",\n\t\"days\":\"3\",\n\t\"funeral_description\": \"This Funeral Happened at No:123, 4th street, Alwarpet. Final Proceedings at St. Thomas Basilica Church Santhome, Chennai at 06-30PM. Maay his soul Rest in Peace.\",\n\t                \"contact_name\": \"Balamurugan\",\n                \"contact_cell\": \"9600297967\",\n                \"contact_addr\": \"52/33, Jayabalan Street, Vasudevan Nagar, Ashok Nagar, CHennai 600083, Tamilnadu\"\n}"
+					"raw": "{\n\t\"user_id\": \"150\",\n\t\"type\": \"3\",\n\t\"image_url\":\"https://innowity.com/uwtgoan/api/images/img_06092019_052309PM_hmVaFZsBZa.jpg\",\n\t\"name\": \"bala\",\n\t\"addr\":\"asdasjd\",\n\t\"dob\":\"12 February, 1991\",\n\t\"dod\":\"11 November, 2001\",\n\t\"msg\":\"Miss you dear father\",\n\t\"days\":\"3\",\n\t\"funeral_description\": \"This Funeral Happened at No:123, 4th street, Alwarpet. Final Proceedings at St. Thomas Basilica Church Santhome, Chennai at 06-30PM. Maay his soul Rest in Peace.\",\n\t                \"contact_name\": \"Balamurugan\",\n                \"contact_cell\": \"9600297967\",\n                \"contact_addr\": \"52/33, Jayabalan Street, Vasudevan Nagar, Ashok Nagar, CHennai 600083, Tamilnadu\"\n}"
 				},
 				"url": "{{env}}/cart_add.php",
 				"description": "params validated\n\npass the param \"days\"correctly. price will be calculated based on \"days\" parameter.\n\nIf days < 0\n------------------------\nCheck the number of days for the post.\n\nNo need to pass end_date\n"
@@ -670,6 +670,32 @@
 				"description": "All params are mandatory and validated\n\nLike/Unlike function will occur\n\nIf you give \"like\":\"yes\"\n==========================\npost will be liked\n\nIf you give \"like\":\"no\"\n==========================\npost will be unliked"
 			},
 			"response": []
+		},
+		{
+			"name": "25. Update Obituary",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"obituary_id\":26,\n\t\"user_id\":33,\n\t\"image_url\":\"https://innowity.com/uwtgoan/api/images/img_06092019_052309PM_hmVaFZsBZa.jpg\",\n\t\"name\": \"sadagopan king ramesh\",\n\t\"addr\":\"asdasjd\",\n\t\"dob\":\"12 February, 1991\",\n\t\"dod\":\"11 November, 2001\",\n\t\"msg\":\"Miss you dear father\",\n\t\"funeral_description\": \"This Funeral Happened at No:123, 4th street, Alwarpet. Final Proceedings at St. Thomas Basilica Church Santhome, Chennai at 06-30PM. Maay his soul Rest in Peace.\",\n\t\"contact_name\": \"Balamurugan\",\n    \"contact_cell\": \"9600297967\",\n    \"contact_addr\": \"52/33, Jayabalan Street, Vasudevan Nagar, Ashok Nagar, CHennai 600083, Tamilnadu\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{env}}/update_obituary.php",
+				"description": "All params are mandatory and validated\n\nLike/Unlike function will occur\n\nIf you give \"like\":\"yes\"\n==========================\npost will be liked\n\nIf you give \"like\":\"no\"\n==========================\npost will be unliked"
+			},
+			"response": []
 		}
 	],
 	"event": [
@@ -696,7 +722,7 @@
 	],
 	"variable": [
 		{
-			"id": "09d09115-15e0-4cd1-9fe2-e5ccd7faa737",
+			"id": "8c2f4c12-6656-4fc7-bd87-c53a39ac5266",
 			"key": "env",
 			"value": "https://innowity.com/uwtgoan/api",
 			"type": "string"
