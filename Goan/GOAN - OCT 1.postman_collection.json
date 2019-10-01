@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "e28ce605-e80e-4e64-a6be-ec07430f71bf",
-		"name": "GOAN - SEP 30",
+		"name": "GOAN - OCT 1",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
@@ -410,7 +410,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"user_id\": \"33\",\n\t\"type\": \"2\",\n\t\"type2_id\": \"12\",\n\t\"receiver_name\": \"bala\",\n\t\"receiver_cell\":\"9600297967\",\n\t\"receiver_addr\":\"asdasjd asdasidj asdjai\",\n\t\"receiver_msg\":\"Getwel soon asdasdasdsda\",\n\t\"delivery_date\": \"31 September, 2019\"\n}"
+					"raw": "{\n\t\"user_id\": \"33\",\n\t\"type\": \"2\",\n\t\"type2_id\": \"12\",\n\t\"receiver_name\": \"Pooja\",\n\t\"receiver_cell\":\"9600297967\",\n\t\"receiver_addr\":\"asdasjd asdasidj asdjai\",\n\t\"receiver_msg\":\"Getwel soon asdasdasdsda\",\n\t\"delivery_date\": \"02 October, 2019\"\n}"
 				},
 				"url": "{{env}}/cart_add.php",
 				"description": "params validated\n\n\nIf type2_id is invalid\n-------------------------------------\n\"message\" => \"Flower not available\"\n\nIf delivery_date is not supplied\n------------------------\n\"message\" => \"Delivery date is mandatory\"\n\nIf delivery_date is past\n------------------------\n\"message\" => \"Delivery date is past.\"\n\n\nIf delivery_date is Today\n------------------------\n\"message\" => \"Flowers cannot be delivered today. Kindly enter a later date..\"\n\n\n"
@@ -429,7 +429,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"user_id\": \"150\",\n\t\"type\": \"3\",\n\t\"image_url\":\"https://innowity.com/uwtgoan/api/images/img_06092019_052309PM_hmVaFZsBZa.jpg\",\n\t\"name\": \"bala\",\n\t\"addr\":\"asdasjd\",\n\t\"dob\":\"12 February, 1991\",\n\t\"dod\":\"11 November, 2001\",\n\t\"msg\":\"Miss you dear father\",\n\t\"days\":\"3\",\n\t\"funeral_description\": \"This Funeral Happened at No:123, 4th street, Alwarpet. Final Proceedings at St. Thomas Basilica Church Santhome, Chennai at 06-30PM. Maay his soul Rest in Peace.\",\n\t                \"contact_name\": \"Balamurugan\",\n                \"contact_cell\": \"9600297967\",\n                \"contact_addr\": \"52/33, Jayabalan Street, Vasudevan Nagar, Ashok Nagar, CHennai 600083, Tamilnadu\"\n}"
+					"raw": "{\n\t\"user_id\": \"33\",\n\t\"type\": \"3\",\n\t\"image_url\":\"https://innowity.com/uwtgoan/api/images/img_06092019_052309PM_hmVaFZsBZa.jpg\",\n\t\"name\": \"bala\",\n\t\"addr\":\"asdasjd\",\n\t\"dob\":\"12 February, 1991\",\n\t\"dod\":\"11 November, 2001\",\n\t\"msg\":\"Miss you dear father\",\n\t\"days\":\"3\",\n\t\"funeral_description\": \"This Funeral Happened at No:123, 4th street, Alwarpet. Final Proceedings at St. Thomas Basilica Church Santhome, Chennai at 06-30PM. Maay his soul Rest in Peace.\",\n\t\"contact_name\": \"Balamurugan\",\n    \"contact_cell\": \"9600297967\",\n    \"contact_addr\": \"52/33, Jayabalan Street, Vasudevan Nagar, Ashok Nagar, CHennai 600083, Tamilnadu\"\n}"
 				},
 				"url": "{{env}}/cart_add.php",
 				"description": "params validated\n\npass the param \"days\"correctly. price will be calculated based on \"days\" parameter.\n\nIf days < 0\n------------------------\nCheck the number of days for the post.\n\nNo need to pass end_date\n"
@@ -484,9 +484,9 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"user_id\": \"33\",\n\t\"cart_id\": \"251\",\n\t\"razor_id\": \"abc1234\"\n} "
+					"raw": "{\n\t\"user_id\": \"33\",\n\t\"cart_id\": \"390\",\n\t\"razor_id\": \"abc1234\"\n} "
 				},
-				"url": "https://innowity.com/uwtgoan/api/book.php",
+				"url": "{{env}}/book.php",
 				"description": "params mandated and validated\n\nError msg 400 if:-\n------------------------------------------\n--subscription available already,\n--cart item not found\n-- end date is past\n\n"
 			},
 			"response": []
@@ -502,7 +502,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{env}}/bookings.php?user_id=33&type=3",
+					"raw": "{{env}}/bookings.php?user_id=33&type=2",
 					"host": [
 						"{{env}}"
 					],
@@ -516,7 +516,7 @@
 						},
 						{
 							"key": "type",
-							"value": "3"
+							"value": "2"
 						}
 					]
 				},
@@ -535,7 +535,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{env}}/booking.php?user_id=33&booking_id=68",
+					"raw": "{{env}}/booking.php?user_id=33&booking_id=162",
 					"host": [
 						"{{env}}"
 					],
@@ -549,7 +549,7 @@
 						},
 						{
 							"key": "booking_id",
-							"value": "68"
+							"value": "162"
 						}
 					]
 				},
@@ -685,7 +685,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"obituary_id\":26,\n\t\"user_id\":33,\n\t\"image_url\":\"https://innowity.com/uwtgoan/api/images/img_06092019_052309PM_hmVaFZsBZa.jpg\",\n\t\"name\": \"sadagopan king ramesh\",\n\t\"addr\":\"asdasjd\",\n\t\"dob\":\"12 February, 1991\",\n\t\"dod\":\"11 November, 2001\",\n\t\"msg\":\"Miss you dear father\",\n\t\"funeral_description\": \"This Funeral Happened at No:123, 4th street, Alwarpet. Final Proceedings at St. Thomas Basilica Church Santhome, Chennai at 06-30PM. Maay his soul Rest in Peace.\",\n\t\"contact_name\": \"Balamurugan\",\n    \"contact_cell\": \"9600297967\",\n    \"contact_addr\": \"52/33, Jayabalan Street, Vasudevan Nagar, Ashok Nagar, CHennai 600083, Tamilnadu\"\n}",
+					"raw": "{\n\t\"obituary_id\":26,\n\t\"user_id\":33,\n\t\"image_url\":\"https://innowity.com/uwtgoan/api/images/img_06092019_052309PM_hmVaFZsBZa.jpg\",\n\t\"name\": \"sadagopan ramesh\",\n\t\"addr\":\"asdasjd\",\n\t\"dob\":\"12 February, 1991\",\n\t\"dod\":\"11 November, 2001\",\n\t\"msg\":\"Miss you dear father\",\n\t\"funeral_description\": \"This Funeral Happened at No:123, 4th street, Alwarpet. Final Proceedings at St. Thomas Basilica Church Santhome, Chennai at 06-30PM. Maay his soul Rest in Peace.\",\n\t\"contact_name\": \"Balamurugan\",\n    \"contact_cell\": \"9600297967\",\n    \"contact_addr\": \"52/33, Jayabalan Street, Vasudevan Nagar, Ashok Nagar, CHennai 600083, Tamilnadu\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -693,7 +693,7 @@
 					}
 				},
 				"url": "{{env}}/update_obituary.php",
-				"description": "All params are mandatory and validated\n\nLike/Unlike function will occur\n\nIf you give \"like\":\"yes\"\n==========================\npost will be liked\n\nIf you give \"like\":\"no\"\n==========================\npost will be unliked"
+				"description": "All params are mandatory and validated\n"
 			},
 			"response": []
 		}
@@ -722,7 +722,7 @@
 	],
 	"variable": [
 		{
-			"id": "8c2f4c12-6656-4fc7-bd87-c53a39ac5266",
+			"id": "b6e5ca13-f99a-472b-be65-b12c45df6c47",
 			"key": "env",
 			"value": "https://innowity.com/uwtgoan/api",
 			"type": "string"
