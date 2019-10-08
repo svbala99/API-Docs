@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "e28ce605-e80e-4e64-a6be-ec07430f71bf",
-		"name": "GOAN - OCT 1",
+		"name": "GOAN - OCT 10",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
@@ -374,7 +374,7 @@
 					"mode": "raw",
 					"raw": "{\n\t\"user_id\": \"33\",\n\t\"proof_type\": \"1\",\n\t\"proof_front_url\": \"https://innowity.com/uwtgoan/images/img_01092019_092143PM_rHhAtbzcAO.jpg\",\n\t\"proof_back_url\": \"https://innowity.com/uwtgoan/images/img_01092019_092143PM_rHhAtbzcAO.jpg\"\n}"
 				},
-				"url": "https://innowity.com/uwtgoan/api/proof_updater.php",
+				"url": "{{env}}/proof_updater.php",
 				"description": "params mandated"
 			},
 			"response": []
@@ -767,6 +767,164 @@
 				"description": "All params are mandatory and validated\n"
 			},
 			"response": []
+		},
+		{
+			"name": "26. Dp and Proof Updater",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "dp",
+							"type": "file",
+							"src": "/E:/xampp/htdocs/sample/images/download (1).png"
+						},
+						{
+							"key": "front",
+							"type": "file",
+							"src": "/E:/xampp/htdocs/sample/images/download.png"
+						},
+						{
+							"key": "back",
+							"type": "file",
+							"src": "/E:/xampp/htdocs/sample/images/download.png"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{env}}/dp_proof_uploader.php?user_id=33&proof_type=1",
+					"host": [
+						"{{env}}"
+					],
+					"path": [
+						"dp_proof_uploader.php"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "33"
+						},
+						{
+							"key": "proof_type",
+							"value": "1"
+						}
+					]
+				},
+				"description": "All params are mandatory and validated\n\n{\n    \"data\": {\n        \"message\": \"DP and Proofs uploaded successfully\",\n        \"user_id\": 33,\n        \"proof_type\": 1,\n        \"dp_url\": \"https://innowity.com/uwtgoan/images/img_08102019_032930PM_TJJfCgljQO.jpg\",\n        \"front_url\": \"https://innowity.com/uwtgoan/images/img_08102019_032930PM_TJJfCgljQO.jpg\",\n        \"back_url\": \"https://innowity.com/uwtgoan/images/img_08102019_032930PM_TJJfCgljQO.jpg\"\n    }\n}"
+			},
+			"response": [
+				{
+					"name": "26. Dp and Proof Updater",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "dp",
+									"type": "file",
+									"src": "/E:/xampp/htdocs/sample/images/download (1).png"
+								},
+								{
+									"key": "front",
+									"type": "file",
+									"src": "/E:/xampp/htdocs/sample/images/download.png"
+								},
+								{
+									"key": "back",
+									"type": "file",
+									"src": "/E:/xampp/htdocs/sample/images/download.png"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{env}}/dp_proof_uploader.php?user_id=33&proof_type=1",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"dp_proof_uploader.php"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "33"
+								},
+								{
+									"key": "proof_type",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 08 Oct 2019 09:59:29 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.39 (cPanel) OpenSSL/1.0.2r mod_bwlimited/1.4 Phusion_Passenger/5.3.7"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.1.27"
+						},
+						{
+							"key": "Upgrade",
+							"value": "h2,h2c"
+						},
+						{
+							"key": "Connection",
+							"value": "Upgrade, Keep-Alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=3, max=75"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"message\": \"DP and Proofs uploaded successfully\",\n        \"user_id\": 33,\n        \"proof_type\": 1,\n        \"dp_url\": \"https://innowity.com/uwtgoan/images/img_08102019_032930PM_TJJfCgljQO.jpg\",\n        \"front_url\": \"https://innowity.com/uwtgoan/images/img_08102019_032930PM_TJJfCgljQO.jpg\",\n        \"back_url\": \"https://innowity.com/uwtgoan/images/img_08102019_032930PM_TJJfCgljQO.jpg\"\n    }\n}"
+				}
+			]
 		}
 	],
 	"event": [
@@ -793,7 +951,7 @@
 	],
 	"variable": [
 		{
-			"id": "bec3ee87-bb7d-4115-89ca-2214ee07b28f",
+			"id": "b4f1bbb6-a55b-40e7-9664-cc0a84ddcb5d",
 			"key": "env",
 			"value": "https://innowity.com/uwtgoan/api",
 			"type": "string"
